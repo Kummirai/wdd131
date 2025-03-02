@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  height: 100vh;
 }
 
 /**
@@ -350,9 +351,9 @@ template {
   display: none;
 }
 
-.container {
-  height: 100%;
-  background-color: antiquewhite;
+body {
+  background-color: rgb(252, 249, 246);
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-columns: repeat(12, 1fr);
 }
@@ -363,8 +364,20 @@ header {
   grid-row: 1 / 2;
 }
 
+main {
+  background-color: red;
+  grid-column: 1 / 10;
+  grid-row: 2 / 12;
+}
+
 aside {
   border: 1px solid grey;
-  grid-row: 2 / 11;
+  grid-row: 2 / 12;
   grid-column: 10 / 13;
+}
+
+footer {
+  border: 1px solid green;
+  grid-column: 1 / 13;
+  grid-row: 12 / 13;
 }
