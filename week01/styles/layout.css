@@ -351,6 +351,13 @@ template {
   display: none;
 }
 
+:root {
+  --primary-color: #2c3930;
+  --secondary-color: #3f4f44;
+  --accent-color1: #a27b5c;
+  --accent-color2: #dcd7c9;
+}
+
 body {
   background-color: rgb(252, 249, 246);
   display: grid;
@@ -359,9 +366,34 @@ body {
 }
 
 header {
-  border: 2px solid red;
   grid-column: 1 / 13;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+header h1 {
+  color: #dcd7c9;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+}
+
+nav a {
+  margin: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: grey;
 }
 
 main {
@@ -371,13 +403,13 @@ main {
 }
 
 aside {
-  border: 1px solid grey;
+  background-color: var(--accent-color2);
   grid-row: 2 / 12;
   grid-column: 10 / 13;
 }
 
 footer {
-  border: 1px solid green;
+  background-color: var(--primary-color);
   grid-column: 1 / 13;
   grid-row: 12 / 13;
 }
