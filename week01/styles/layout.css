@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary-color: #2c3930;
-  --secondary-color: #3f4f44;
-  --accent-color1: #a27b5c;
-  --accent-color2: #dcd7c9;
+  --primary-color: #3e5879;
+  --secondary-color: #213555;
+  --accent-color1: #d8c4b6;
+  --accent-color2: #f5efe7;
 }
 
 body {
@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 2rem;
 }
 
@@ -55,7 +55,10 @@ nav a:hover {
 
 main {
   grid-column: 2 / 8;
-  grid-row: 2 / 9;
+  grid-row: 2 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-image {
@@ -69,12 +72,42 @@ main {
 
 aside {
   background-color: var(--accent-color2);
-  grid-row: 2 / 12;
+  grid-row: 2 / 10;
   grid-column: 10 / 13;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+aside article {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+aside article h2 {
+  color: var(--secondary-color);
+  font-weight: 500;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+aside article p {
+  color: var(--primary-color);
+  font-size: 0.85rem;
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   grid-column: 1 / 13;
-  grid-row: 9 / 13;
+  grid-row: 10 / 13;
+  color: var(--accent-color2);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0.5rem 2rem;
+}
+
+footer p {
+  font-size: 0.8rem;
 }
