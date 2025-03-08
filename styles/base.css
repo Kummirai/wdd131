@@ -1,14 +1,13 @@
-.poppins-thin {
+body{
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
     font-style: normal;
   }
 
   :root{
-    --primary-color: ;
-    --secondary-colr: ;
-    --accent-color-1: ;
-    --accent-color-2: ;
+    --primary-color: #161A30;
+    --secondary-color: #31304D;
+    --accent-color-1: #B6BBC4;
+    --accent-color-2: #F0ECE5;
   }
 
   nav ul{
