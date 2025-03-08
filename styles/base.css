@@ -1,7 +1,14 @@
+*{
+  margin: 0;
+  box-sizing: 0;
+  box-sizing: border-box;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
   }
+  
 
   :root{
     --primary-color: #161A30;
@@ -10,10 +17,44 @@ body{
     --accent-color-2: #F0ECE5;
   }
 
+  header{
+    background-color: var(--primary-color);
+    color: var(--accent-color-1);
+  }
+
+  header h1{
+    text-align: center;
+    padding: 1.8rem;
+    font-weight: 600;
+  }
+
+  header h1 span{
+    color: var(--accent-color-2);
+  }
+
+  nav{
+    background-color: var(--accent-color-2);
+    padding: 0.8rem;
+  }
+
   nav ul{
     display: flex;
   }
 
   nav ul li{
     flex: 1 1 100%;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  nav a:hover{
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+    padding: 0.2rem 1.4rem;
+    border-radius: 0.2rem;
   }
