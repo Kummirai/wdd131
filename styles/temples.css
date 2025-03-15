@@ -65,3 +65,7 @@ nav ul a:hover{
    background-color: var(--secondary-color);
    color: var(--accent-color-2);
 }
+
+.show{
+    display: none;
+}
