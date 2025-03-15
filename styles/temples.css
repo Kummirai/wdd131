@@ -29,16 +29,12 @@ header{
 
 #menu{
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
     color: var(--accent-color-2);
     position: absolute;
     top: 0.65rem;
     right: 0.9rem;
-}
-
-#menu:hover{
-    color: var(--accent-color-1);
 }
 
 #menu::before{
@@ -54,7 +50,7 @@ header{
 }
 
 header h1{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: var(--accent-color-2);
     padding: 1.5rem 1rem;
