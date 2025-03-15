@@ -46,7 +46,7 @@ header{
     display: none;
 }
 
-#menu.show::before{
+#menu.close::before{
     content: "\2715";
 }
 
