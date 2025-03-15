@@ -73,7 +73,7 @@ nav ul a{
     font-weight: 500;
 }
 
-nav ul a:hover{
+nav ul li:hover{
    background-color: var(--accent-color-1);
    color: var(--accent-color-2);
 }
@@ -101,7 +101,8 @@ figure img{
 
 figcaption{
     text-align: center;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    font-size: 0.85rem;
 }
 
 footer{

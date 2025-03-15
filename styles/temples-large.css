@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+
+    :root{
+        --primary-color: #161A30;
+        --secondary-color: #31304D;
+        --accent-color-1: #B6BBC4;
+        --accent-color-2: #f7f5f2;
+      }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav{
+        background-color: transparent;
+        
+    }
+
+    ul{
+        display: flex;
+    }
+    
+    ul li{
+        display: block;
+        padding: 0.1rem 2rem;
+        flex: 1 1 100%;
+    }
+
+   
+    ul a {
+        display: block;
+        color: var(--accent-color-2); 
+        text-decoration: none; 
+        padding: 10px 15px; 
+    }
+    
+    nav ul li:hover{
+        background-color: var(--accent-color-2);
+        color: var(--accent-color-2);
+    }
+
+    ul li:hover a {
+        color: var(--primary-color);
+    }
+    
+
+    main{
+        min-width: 1000px;
+        align-self: center;
+    }
+}
