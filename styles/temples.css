@@ -73,7 +73,7 @@ nav ul a{
     font-weight: 500;
 }
 
-nav ul li:hover{
+nav ul a:hover{
    background-color: var(--accent-color-1);
    color: var(--accent-color-2);
 }
