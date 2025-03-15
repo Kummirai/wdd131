@@ -5,15 +5,19 @@
 }
 
 :root{
-    /* --primary-color: #161A30; */
-    --primary-color: #2D336B;
-    --secondary-color: #7886C7;
-    --accent-color-1: #FFF2F2;
-    --accent-color-2: #F0ECE5;
+    --primary-color: #161A30;
+    --secondary-color: #31304D;
+    --accent-color-1: #B6BBC4;
+    --accent-color-2: #f7f5f2;
   }
 
 body{
     font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -38,6 +42,14 @@ header{
     content: "\2630";
 }
 
+.show{
+    display: none;
+}
+
+#menu.show::before{
+    content: "\2715";
+}
+
 header p{
     font-size: 1.7rem;
     font-weight: 500;
@@ -46,7 +58,7 @@ header p{
 }
 
 nav{
-    background-color: var(--accent-color-1);
+    background-color: var(--accent-color-2);
 }
 
 nav ul li{
@@ -62,10 +74,46 @@ nav ul a{
 }
 
 nav ul a:hover{
-   background-color: var(--secondary-color);
+   background-color: var(--accent-color-1);
    color: var(--accent-color-2);
 }
 
-.show{
-    display: none;
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    place-items: center;
+    padding: 0 1rem 1rem 1rem;
 }
+main h1{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+figure{
+    max-width: 500px;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    color: var(--primary-color)
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+footer p{
+    padding: 0.2rem;
+}
+
