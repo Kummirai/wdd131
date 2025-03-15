@@ -24,7 +24,7 @@
         flex: 1 1 100%;
     }
    
-    ul a {
+    nav ul a {
         color: var(--accent-color-2);  
     }
     
