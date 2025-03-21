@@ -11,48 +11,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
 </head>
 
 <body>
-    <header>
-        <h1>South Africa</h1>
-    </header>
-    <main>
-        <div class="hero-image">
-            <img src="" alt="">
-        </div>
-        <section>
-            <div class="data">
-                <h2>Data</h2>
-                <div>
-                    <p><span>Area: </span>566 666</p>
-                    <p><span>Population: </span>5454545</p>
-                    <p><span>Capital: </span>Pretoria</p>
-                    <p><span>Languages: </span>Sesotho</p>
-                    <p><span>Currency: </span>Rand</p>
-                    <p><span>Timezone: </span>UTC+2</p>
-                    <p><span>Calling Code: </span>+27</p>
-                    <p><span>Internet: </span>.mg</p>
-                </div>
-            </div>
-            <div class="weather">
-                <h2>Weather</h2>
-                <div>
-                    <img src="" alt="">
-                    <div class="weather-data">
-                        <p><span>Temperature: </span>10 C</p>
-                        <p><span>Conditions: </span>Cloudy</p>
-                        <p><span>Wnd: </span>5km/h</p>
-                        <p><span>Wind Chill: </span>9.8 C</p>
+    <div class="container">
+        <header>
+            <h1>South Africa</h1>
+        </header>
+        <main>
+            <picture>
+                <img src="images/sa-wildlife.webp" alt="">
+            </picture>
+            <section>
+                <div class="data">
+                    <h2>Data</h2>
+                    <div>
+                        <p><span>Area: </span>566 666</p>
+                        <p><span>Population: </span>5454545</p>
+                        <p><span>Capital: </span>Pretoria</p>
+                        <p><span>Languages: </span>Sesotho</p>
+                        <p><span>Currency: </span>Rand</p>
+                        <p><span>Timezone: </span>UTC+2</p>
+                        <p><span>Calling Code: </span>+27</p>
+                        <p><span>Internet: </span>.mg</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy;<span id="currentyear"></span> Milton Kumirai - South Africa</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <div>
+                        <img src="" alt="">
+                        <div class="weather-data">
+                            <p><span>Temperature: </span>10 C</p>
+                            <p><span>Conditions: </span>Cloudy</p>
+                            <p><span>Wnd: </span>5km/h</p>
+                            <p><span>Wind Chill: </span>9.8 C</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Milton Kumirai - South Africa</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </div>
 </body>
 
 </html>
