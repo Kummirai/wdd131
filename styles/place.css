@@ -89,6 +89,10 @@ picture{
     margin: 0.5rem;
 }
 
+.windchill{
+    font-weight: normal;
+}
+
 picture img{
     border-bottom: 10px solid var(--primary-color);
     width: 100%;
