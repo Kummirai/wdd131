@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/getWeather.js"></script>
+    <script src="scripts/getCountry.js"></script>
     <link rel="stylesheet" href="styles/place.css">
 </head>
 
@@ -23,34 +23,52 @@
         </header>
         <main>
             <picture>
-                <img src="images/sa-wildlife.webp" alt="">
+                <source srcset="images/sa-wildlife.webp" media="(max-width: 768px)">
+                <img src="images/sa-landscape.webp" alt="landscape image">
             </picture>
             <section>
                 <div class="data">
                     <h2>Data</h2>
-                    <div class="country-data">
-                        <!-- <p><span>Area: </span>566 666</p>
-                        <p><span>Population: </span>5454545</p>
-                        <p><span>Capital: </span>Pretoria</p>
-                        <p><span>Languages: </span>Sesotho</p>
-                        <p><span>Currency: </span>Rand</p>
-                        <p><span>Timezone: </span>UTC+2</p>
-                        <p><span>Calling Code: </span>+27</p>
-                        <p><span>Internet: </span>.mg</p> -->
-                    </div>
-                </div>
-                <div class="weather">
-                    <h2>Weather</h2>
-                    <div>
-                        <img src="" alt="">
-                        <div class="weather-data">
-                            <p><span>Temperature: </span>10 C</p>
-                            <p><span>Conditions: </span>Cloudy</p>
-                            <p><span>Wnd: </span>5km/h</p>
-                            <p><span>Wind Chill: </span>9.8 C</p>
+                    <div class="country-data info">
+                        <div class="info-keys">
+                            <p><span>Area: </span></p>
+                            <p><span>Population: </span></p>
+                            <p><span>Capital: </span></p>
+                            <p><span>Languages: </span></p>
+                            <p><span>Currency: </span></p>
+                            <p><span>Timezone: </span></p>
+                            <p><span>Calling Code: </span></p>
+                            <p><span>Internet: </span></p>
+                        </div>
+                        <div class="info-values">
+                            <p>1,221,037 km²</p>
+                            <p>60,604,992</p>
+                            <p>Pretoria</p>
+                            <p>Zulu, Afrikaans, and English</p>
+                            <p>Rand (ZAR)</p>
+                            <p>UTC+2</p>
+                            <p>+27</p>
+                            <p>.za</p>
                         </div>
                     </div>
-                </div>
+                    <div class="weather info">
+                        <h2>Weather</h2>
+                        <div>
+                            <img src="images/cloudy.svg" alt="cloudy weather">
+                            <div class="info-keys">
+                                <p><span>Temperature: </span>10 C</p>
+                                <p><span>Conditions: </span>Cloudy</p>
+                                <p><span>Wnd: </span>5km/h</p>
+                                <p><span>Wind Chill: </span>9.8 C</p>
+                            </div>
+                            <div class="info-values">
+                                <p>10 C</p>
+                                <p>Cloudy</p>
+                                <p>5km/h</p>
+                                <p>9.8 C</p>
+                            </div>
+                        </div>
+                    </div>
             </section>
         </main>
         <footer>
