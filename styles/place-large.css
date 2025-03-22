@@ -41,14 +41,14 @@
 
     .data{
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: 40px;
+        left: 20px;
     }
 
     .weather{
         position: absolute;
-        bottom: 50px;
-        right: 50px;
+        bottom: 40px;
+        right: 20px;
     }
 
     .card-h2{
