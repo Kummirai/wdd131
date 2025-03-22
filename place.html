@@ -14,6 +14,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/windChill.js" defer></script>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
 </head>
 
 <body>
@@ -27,8 +28,8 @@
                 <img src="images/sa-landscape.webp" alt="landscape image">
             </picture>
             <section>
-                <div class="data">
-                    <h2>Data</h2>
+                <div class="data card">
+                    <h2 class="card-h2">Data</h2>
                     <div class="country-data info">
                         <div class="info-keys">
                             <p><span>Area: </span></p>
@@ -51,26 +52,27 @@
                             <p>.za</p>
                         </div>
                     </div>
-                    <div class="weather">
-                        <h2>Weather</h2>
-                        <img src="images/cloudy.svg" alt="cloudy weather">
-                        <div class="weather-data info">
-                            <div class="info-keys">
-                                <p><span>Temperature: </span></p>
-                                <p><span>Conditions: </span></p>
-                                <p><span>Wnd: </span></p>
-                                <p><span>Wind Chill: </span></p>
-                            </div>
-                            <div class="info-values">
-                                <p>10 &deg;C</p>
-                                <p>Cloudy</p>
-                                <p>5km/h</p>
-                                <p><span class="windchill"></span>&deg;C</p>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
+                <div class="weather card">
+                    <h2 class="card-h2">Weather</h2>
+                    <img src="images/cloudy.svg" alt="cloudy weather">
+                    <div class="weather-data info">
+                        <div class="info-keys">
+                            <p><span>Temperature: </span></p>
+                            <p><span>Conditions: </span></p>
+                            <p><span>Wnd: </span></p>
+                            <p><span>Wind Chill: </span></p>
+                        </div>
+                        <div class="info-values">
+                            <p>10 &deg;C</p>
+                            <p>Cloudy</p>
+                            <p>5km/h</p>
+                            <p><span class="windchill"></span>&deg;C</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </section>
         </main>
         <footer>

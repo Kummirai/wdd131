@@ -1,0 +1,71 @@
+@media (min-width: 769px) {
+    :root{
+        --primary-color: #16404D;
+        --secondary-color: #A6CDC6;
+        --accent-color-1: #DDA853;
+        --accent-colorr-2: #FBF5DD;
+        --accent-transparent: #fbf5dd67;
+        --primary-color-transparent: #16404df3;
+    }
+
+    .container{
+        height: 100vh;
+    }
+    header{
+        height: 10%;
+    }
+
+    main{
+        position: relative;
+        max-height: 80%;
+    }
+
+    footer{
+        height: 10%;
+    }
+
+    main img{
+        height: 100%;
+    }
+
+    .card{
+        background-color: var(--accent-colorr-2);
+        width: 400px;
+        height: fit-content;
+        padding: 10px;
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        background-color: var(--accent-transparent);
+        border-radius: 4px;
+    }
+
+    .data{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .weather{
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .card-h2{
+        padding: 1rem;
+        color: var(--accent-colorr-2);
+        text-align: left;
+        width: 90%;
+        position: relative;
+        left: -20px;
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        background-color: var(--primary-color-transparent);
+        border-radius: 4px;
+    }
+
+    .weather h2{
+        left: -40px
+    }
+    
+}
