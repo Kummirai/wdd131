@@ -65,7 +65,21 @@
     }
 
     .weather h2{
-        left: -40px
+        left: -60px;
+        margin-bottom: 1rem;
+        width: 80%;
     }
     
+    .weather img{
+        display: none;
+    }
+
+    .weather h2::after {
+        content: url('../images/cloudy.svg');
+        display: inline-block;
+        margin-left: 100px; 
+        vertical-align: middle;
+        width: 36px;
+
+    }
 }

@@ -10,7 +10,5 @@ const calculateWindChill = (temp, speed, unit) => {
     return "N/A";
 };
 
-
-console.log(calculateWindChill(10, 5, "C"));
 windChill.innerHTML = calculateWindChill(10, 5, "C");
  
