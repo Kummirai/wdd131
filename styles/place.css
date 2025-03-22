@@ -30,6 +30,9 @@ h1{
 p{
     font-size: 1rem;
     line-height: 1.5rem;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h2{
@@ -56,6 +59,7 @@ section{
 
 p span{
     font-weight: 700;
+    
 }
 
 picture{
