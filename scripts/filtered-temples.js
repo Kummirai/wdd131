@@ -167,7 +167,7 @@ navList.forEach((item) => {
                 cardContainer.innerHTML = cards;
             });   
         } else if (item.textContent == "Large"){
-            const largeTemples = temples.filter(temple => temple.area > 10000);
+            const largeTemples = temples.filter(temple => temple.area > 90000);
             cards = "";
             largeTemples.map((temple)=>{
                 cards += `
