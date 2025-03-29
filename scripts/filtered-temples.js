@@ -66,7 +66,7 @@ const temples = [
         {
         templeName: "Salt Lake City Utah",
         location: "Salt Lake City, Utah, United States",
-        dedicated: "1893, April, 5",
+        dedicated: "1893, April, 6",
         area: 382207,
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
@@ -74,8 +74,8 @@ const temples = [
     {
         templeName: "Los Angeles California",
         location: "Los Angeles, California, United States",
-        dedicated: "1937, April, 13",
-        area: 189000,
+        dedicated: "1956, March, 11",
+        area: 190614,
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/los-angeles-california-temple/los-angeles-california-temple-38945-main.jpg"
     }
