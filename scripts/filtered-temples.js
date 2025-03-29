@@ -90,9 +90,9 @@ const temples = [
     cards += `
             <div class="card">
                     <h3>${temple.templeName}</h3>
-                    <p><span>Location: </span>${temple.templeName}</p>
-                    <p><span>Dediacation: </span>${temple.dedicated}</p>
-                    <p><span>Size: </span>${temple.area}sq ft</p>
+                    <p><span>LOCATION: </span>${temple.templeName}</p>
+                    <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                    <p><span>SIZE: </span>${temple.area}sq ft</p>
                     <figure>
                         <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
                     </figure>
