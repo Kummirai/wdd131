@@ -69,7 +69,7 @@ const temples = [
                     <p><span>Dediacation: </span>${temple.dedicated}</p>
                     <p><span>Size: </span>${temple.area}sq ft</p>
                     <figure>
-                        <img src=${temple.imageUrl} alt=${temple.templeName}>
+                        <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
                     </figure>
                 </div>
     `;
