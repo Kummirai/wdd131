@@ -150,9 +150,39 @@ navList.forEach((item) => {
                 cardContainer.innerHTML = cards;
             });  
         } else if (item.textContent == "New"){
-            console.log("New Temples");  
+            const newTemples = temples.filter(temple => temple.dedicated.split(",")[0] > 2000);
+            cards = "";
+            newTemples.map((temple)=>{
+                cards += `
+                    <div class="card">
+                            <h3>${temple.templeName}</h3>
+                            <p><span>LOCATION: </span>${temple.templeName}</p>
+                            <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                            <p><span>SIZE: </span>${temple.area}sq ft</p>
+                            <figure>
+                                <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
+                            </figure>
+                        </div>
+                `;
+                cardContainer.innerHTML = cards;
+            });   
         } else if (item.textContent == "Large"){
-            console.log("Large Temples");  
+            const largeTemples = temples.filter(temple => temple.area > 10000);
+            cards = "";
+            largeTemples.map((temple)=>{
+                cards += `
+                    <div class="card">
+                            <h3>${temple.templeName}</h3>
+                            <p><span>LOCATION: </span>${temple.templeName}</p>
+                            <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                            <p><span>SIZE: </span>${temple.area}sq ft</p>
+                            <figure>
+                                <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
+                            </figure>
+                        </div>
+                `;
+                cardContainer.innerHTML = cards;
+            }); 
         } else if(item.textContent === "Home" ){
             console.log("All Temples");  
             cards = "";
