@@ -110,3 +110,68 @@ menu.addEventListener("click", ()=>{
     menu.classList.toggle("close");
 });
 
+
+const navList = document.querySelectorAll("nav ul li a");
+navList.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(item.textContent == "Small"){
+            const smallTemples = temples.filter(temple => temple.area < 10000);
+            cards = "";
+            smallTemples.map((temple)=>{
+                cards += `
+                    <div class="card">
+                            <h3>${temple.templeName}</h3>
+                            <p><span>LOCATION: </span>${temple.templeName}</p>
+                            <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                            <p><span>SIZE: </span>${temple.area}sq ft</p>
+                            <figure>
+                                <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
+                            </figure>
+                        </div>
+                `;
+                cardContainer.innerHTML = cards;
+            });
+            
+        } else if (item.textContent == "Old"){
+            const oldTemples = temples.filter(temple => temple.dedicated.split(",")[0] < 1900);
+            cards = "";
+            oldTemples.map((temple)=>{
+                cards += `
+                    <div class="card">
+                            <h3>${temple.templeName}</h3>
+                            <p><span>LOCATION: </span>${temple.templeName}</p>
+                            <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                            <p><span>SIZE: </span>${temple.area}sq ft</p>
+                            <figure>
+                                <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
+                            </figure>
+                        </div>
+                `;
+                cardContainer.innerHTML = cards;
+            });  
+        } else if (item.textContent == "New"){
+            console.log("New Temples");  
+        } else if (item.textContent == "Large"){
+            console.log("Large Temples");  
+        } else if(item.textContent === "Home" ){
+            console.log("All Temples");  
+            cards = "";
+            temples.map((temple)=>{
+                cards += `
+                    <div class="card">
+                            <h3>${temple.templeName}</h3>
+                            <p><span>LOCATION: </span>${temple.templeName}</p>
+                            <p><span>DEDICATION: </span>${temple.dedicated}</p>
+                            <p><span>SIZE: </span>${temple.area}sq ft</p>
+                            <figure>
+                                <img loading="lazy" src=${temple.imageUrl} alt=${temple.templeName}>
+                            </figure>
+                        </div>
+                `;
+                cardContainer.innerHTML = cards;
+            });
+        }
+        
+    });
+});
+
