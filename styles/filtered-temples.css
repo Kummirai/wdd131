@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #161A30;
+    --secondary-color: #31304D;
+    --accent-color-1: #B6BBC4;
+    --accent-color-2: #f7f5f2;
+  }
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: relative;   
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--accent-color-2);
+    position: absolute;
+    top: 0.75rem;
+    right: 0.9rem;
+}
+
+#menu::before{
+    content: "\2630";
+}
+
+.show{
+    display: none;
+}
+
+#menu.close::before{
+    content: "\2715";
+}
+
+header h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--accent-color-2);
+    padding: 1.5rem 1rem;
+}
+
+nav{
+    background-color: var(--accent-color-2);
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    display: block;
+    padding:  0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+nav ul a:hover{
+   background-color: var(--accent-color-1);
+   color: var(--accent-color-2);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    place-items: center;
+    padding: 0 1rem 1rem 1rem;
+}
+main h2{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+
+figure{
+    max-width: 500px;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+footer p{
+    padding: 0.2rem;
+}
+

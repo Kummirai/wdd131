@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    } 
+
+    .show{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav{
+        background-color: transparent;
+    }
+
+    ul{
+        display: flex;
+    }
+    
+    ul li{
+        padding: 0.1rem 2rem;
+        flex: 1 1 100%;
+    }
+   
+    nav ul a {
+        color: var(--accent-color-2);  
+    }
+    
+    ul li a:hover{
+        color: var(--primary-color);
+        background-color: var(--accent-color-2);
+    }
+    
+    main{
+        min-width: 1000px;
+        align-self: center;
+    }
+}
