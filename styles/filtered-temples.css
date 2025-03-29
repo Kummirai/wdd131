@@ -81,6 +81,7 @@ nav ul a:hover{
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
     padding: 0 1rem 1rem 1rem;
     min-height: 100vh;
