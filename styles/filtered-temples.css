@@ -80,10 +80,10 @@ nav ul a:hover{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
-    place-items: center;
     padding: 0 1rem 1rem 1rem;
+    min-height: 100vh;
 }
 main h2{
     text-align: center;
@@ -95,9 +95,9 @@ main h2{
     border: 1px solid var(--accent-color-1);
     padding: 1rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
-    max-height: 350px;
+    max-height: 330px;
 }
 .card h3{
     font-size: 1.2rem;
