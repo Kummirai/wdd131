@@ -78,7 +78,7 @@ nav ul a:hover{
    color: var(--accent-color-2);
 }
 
-.main{
+.grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
@@ -90,14 +90,37 @@ main h2{
     padding: 1rem 0;
     font-size: 1.5rem;
 }
+.card{
+    background-color: var(--accent-color-2);
+    border: 1px solid var(--accent-color-1);
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+.card h3{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 0.5rem 0;
+}
+.card p{
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    padding: 0.1rem 0;
+}
 
+.card span{
+    font-weight: 600;
+}
 
 figure{
     max-width: 500px;
+    margin-top: 0.8rem;
 }
 
 figure img{
     width: 100%;
+    object-fit: cover;
 }
 
 figcaption{
