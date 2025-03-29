@@ -97,6 +97,7 @@ main h2{
     width: 100%;
     max-width: 300px;
     text-align: center;
+    max-height: 350px;
 }
 .card h3{
     font-size: 1.2rem;
@@ -116,11 +117,14 @@ main h2{
 figure{
     max-width: 500px;
     margin-top: 0.8rem;
+    height: 180px;
 }
 
 figure img{
     width: 100%;
     object-fit: cover;
+    height: 100%;
+    box-shadow: 0 0 10px var(--accent-color-1);
 }
 
 figcaption{
