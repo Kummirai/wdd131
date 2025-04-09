@@ -6,16 +6,29 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f4ff;
     color: #333;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 500px;
   }
   
   h1 {
     text-align: center;
     margin-bottom: 1rem;
     color: #4B0082;
+    background-color: #e6d6f3;
+    max-width: 500px;
+    text-align: center;
   }
   
   /* Form container */
