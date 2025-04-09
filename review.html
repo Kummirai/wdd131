@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Submitted</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>WDD 131 – Picture Album - Milton Kumirai</title>
+    <meta name="description" content="Milton Kumirai 's Picture Album for WDD 131 – Dynamic Web Fundamentals course">
+    <meta name="author" content="Milton Kumirai">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Thank You!</h1>
@@ -24,11 +35,7 @@
         <p>&copy; <span id="currentYear"></span> | Product Reviews | Last Modified: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="js/review.js"></script>
-    <script>
-        // Common footer content
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = document.lastModified;
-    </script>
+
 </body>
+
 </html>
