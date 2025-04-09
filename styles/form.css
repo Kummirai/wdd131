@@ -1,0 +1,114 @@
+/* Reset + base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f4ff;
+    color: #333;
+    padding: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4B0082;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #e6d6f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  /* Radio and checkbox layout */
+  fieldset {
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #6a0dad;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4b0082;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  
+  /* Confirmation Page Styling */
+  #reviewCount {
+    color: #6a0dad;
+    font-weight: bold;
+  }
+  
+  /* Responsive tweaks */
+  @media (min-width: 600px) {
+    form {
+      padding: 2rem;
+    }
+  }
+  
