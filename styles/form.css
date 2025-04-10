@@ -52,7 +52,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Labels and Inputs */
+
   label {
     display: block;
     margin-top: 1rem;
@@ -71,7 +71,7 @@
     font-size: 1rem;
   }
   
-  /* Radio and checkbox layout */
+
   fieldset {
     border: none;
     margin-top: 1rem;
@@ -125,7 +125,7 @@
     padding: 1rem 8rem;
   }
   
-  /* Confirmation Page Styling */
+ 
   #reviewCount {
     color: var(--primary-color);
     font-weight: bold;
