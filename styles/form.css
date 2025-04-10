@@ -192,7 +192,22 @@
   
   
   /* Responsive tweaks */
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
+
+    .container {
+      width: 100%;
+    }
+    .heading {
+      padding: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    form {
+      padding: 1rem;
+    }
+
     form {
       padding: 2rem;
     }
