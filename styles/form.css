@@ -58,6 +58,7 @@
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
+    color: var(--primary-color);
   }
   
   input[type="text"],
@@ -80,6 +81,7 @@
   fieldset legend {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
   }
   
   input[type="radio"],
