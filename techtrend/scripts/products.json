@@ -1,1 +1,127 @@
-{}
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "UltraBook Pro",
+        "category": "laptops",
+        "price": 1299.99,
+        "description": "Thin and light professional laptop with powerful performance.",
+        "specs": [
+          "15.6\" 4K OLED Display",
+          "Intel Core i7-1165G7",
+          "16GB RAM",
+          "512GB SSD",
+          "Windows 11 Pro"
+        ],
+        "image": "images/ultra-book.jpg",
+        "thumbnails": [
+          "images/laptop-1-thumb1.jpg",
+          "images/laptop-1-thumb2.jpg",
+          "images/laptop-1-thumb3.jpg"
+        ],
+        "featured": true,
+        "reviews": [
+          {
+            "author": "John D.",
+            "rating": 5,
+            "comment": "Fantastic laptop! The screen is amazing and it's so lightweight."
+          },
+          {
+            "author": "Sarah M.",
+            "rating": 4,
+            "comment": "Great performance, but battery life could be better."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "GameMax Fury",
+        "category": "laptops",
+        "price": 924.3,
+        "description": "High-performance gaming machine with RGB keyboard.",
+        "specs": [
+          "15.6\" FHD Display",
+          "AMD Ryzen 7 5800H",
+          "16GB RAM",
+          "1TB SSD",
+          "Windows 11 Pro"
+        ],
+        "image": "images/gamemax-fury.jpg",
+        "thumbnails": [
+          "images/laptop-1-thumb1.jpg",
+          "images/laptop-1-thumb2.jpg",
+          "images/laptop-1-thumb3.jpg"
+        ],
+        "featured": true,
+        "reviews": [
+          {
+            "author": "Alex P.",
+            "rating": 5,
+            "comment": "Loving the performance and the build quality."
+          },
+          {
+            "author": "Jamie L.",
+            "rating": 4,
+            "comment": "Solid value for money."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "PixelPhone X",
+        "category": "phones",
+        "price": 799.99,
+        "description": "Flagship smartphone with best-in-class camera.",
+        "specs": [
+          "6.4\" AMOLED Display",
+          "Snapdragon 888",
+          "8GB RAM",
+          "128GB Storage",
+          "Android 12"
+        ],
+        "image": "images/pixel-phone.jpg",
+        "thumbnails": [
+          "images/phone-1-thumb1.jpg",
+          "images/phone-1-thumb2.jpg"
+        ],
+        "featured": false,
+        "reviews": [
+          {
+            "author": "Mike T.",
+            "rating": 5,
+            "comment": "The camera is unbelievable!"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "AirBuds Pro",
+        "category": "accessories",
+        "price": 199.99,
+        "description": "Premium wireless earbuds with active noise cancellation.",
+        "specs": [
+          "Active Noise Cancellation",
+          "24hr battery life",
+          "Wireless charging",
+          "Bluetooth 5.0"
+        ],
+        "image": "images/airbuds.jpg",
+        "thumbnails": [
+          "images/earbuds-thumb1.jpg"
+        ],
+        "featured": true,
+        "reviews": [
+          {
+            "author": "Lisa K.",
+            "rating": 4,
+            "comment": "Great sound quality and battery life."
+          },
+          {
+            "author": "David R.",
+            "rating": 5,
+            "comment": "Best earbuds I've ever owned."
+          }
+        ]
+      }
+    ]
+  }
