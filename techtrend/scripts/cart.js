@@ -1,6 +1,16 @@
 // Cart functionality
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+// Update cart count in the UI
+function updateCartCount() {
+  const count = cart.reduce((total, item) => total + item.quantity, 0);
+  const cartCountElements = document.querySelectorAll('.cart-count');
+  
+  cartCountElements.forEach(element => {
+    element.textContent = count;
+  });
+}
+
 // Add to cart function
 function addToCart(productId, quantity = 1) {
   const product = products.find(p => p.id === productId);
@@ -52,8 +62,8 @@ function showCartNotification(productName, quantity) {
   const notification = document.createElement('div');
   notification.className = 'cart-notification';
   notification.innerHTML = `
-        <p>Added ${quantity} ${quantity > 1 ? 'items' : 'item'} of ${productName} to your cart</p>
-    `;
+    <p>Added ${quantity} ${quantity > 1 ? 'items' : 'item'} of ${productName} to your cart</p>
+  `;
 
   document.body.appendChild(notification);
 
@@ -71,6 +81,8 @@ function showCartNotification(productName, quantity) {
 
 // Initialize cart event listeners
 document.addEventListener('DOMContentLoaded', function() {
+  updateCartCount();
+  
   // Add to cart buttons
   document.addEventListener('click', function(e) {
     if (e.target.classList.contains('add-to-cart')) {
@@ -103,30 +115,10 @@ document.addEventListener('DOMContentLoaded', function() {
         addToCart(productId, quantity);
       }
     }
+    
+    // Cart button click
+    if (e.target.classList.contains('cart-btn') || e.target.closest('.cart-btn')) {
+      window.location.href = 'cart.html';
+    }
   });
 });
-
-// Cart notification styles (added dynamically)
-const cartNotificationStyles = document.createElement('style');
-cartNotificationStyles.textContent = `
-    .cart-notification {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: var(--accent-green);
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 4px;
-        box-shadow: var(--shadow);
-        transform: translateY(100px);
-        opacity: 0;
-        transition: all 0.3s ease;
-        z-index: 1000;
-    }
-    
-    .cart-notification.show {
-        transform: translateY(0);
-        opacity: 1;
-    }
-`;
-document.head.appendChild(cartNotificationStyles);

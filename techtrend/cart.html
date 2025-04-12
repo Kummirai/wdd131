@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - TechTrend</title>
+    <meta name="author" content="Milton Kumirai">
+    <meta name="description" content="View your shopping cart at TechTrend">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>TechTrend</h1>
+      </div>
+      <nav class="main-nav">
+        <button class="hamburger" aria-label="Menu">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <button class="search-btn" aria-label="Search">🔍</button>
+          <button class="cart-btn" aria-label="Cart">🛒<span class="cart-count">0</span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <div class="container">
+        <h1>Your Shopping Cart</h1>
+        
+        <div id="cartItems">
+          <!-- Cart items will be populated by JavaScript -->
+          <div class="empty-cart">
+            <p>Your cart is empty</p>
+            <a href="products.html" class="btn">Browse Products</a>
+          </div>
+        </div>
+        
+        <div class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">Free</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+          <button id="checkoutBtn" class="btn" disabled>Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>TechTrend</h3>
+          <p>Your destination for the latest technology products.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+        <div class="footer-section" id="contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@techtrend.shop</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> TechTrend. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/product.js" defer></script>
+  <script src="scripts/cart.js" defer></script>
+  <script>
+    // Cart page specific functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      function displayCartItems() {
+        const cartItemsContainer = document.getElementById('cartItems');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = `
+            <div class="empty-cart">
+              <p>Your cart is empty</p>
+              <a href="products.html" class="btn">Browse Products</a>
+            </div>
+          `;
+          document.getElementById('checkoutBtn').disabled = true;
+          updateCartTotal(0);
+          return;
+        }
+        
+        let subtotal = 0;
+        cartItemsContainer.innerHTML = cart.map(item => {
+          const itemTotal = item.price * item.quantity;
+          subtotal += itemTotal;
+          
+          return `
+            <div class="cart-item" data-id="${item.id}">
+              <div class="item-image">
+                <img src="${item.image}" alt="${item.name}">
+              </div>
+              <div class="item-details">
+                <h3>${item.name}</h3>
+                <div class="item-price">$${item.price.toFixed(2)}</div>
+                <div class="item-quantity">
+                  <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                  <input type="number" value="${item.quantity}" min="1" data-id="${item.id}">
+                  <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                </div>
+              </div>
+              <div class="item-total">$${itemTotal.toFixed(2)}</div>
+              <button class="remove-item" data-id="${item.id}">×</button>
+            </div>
+          `;
+        }).join('');
+        
+        updateCartTotal(subtotal);
+        document.getElementById('checkoutBtn').disabled = false;
+      }
+      
+      function updateCartTotal(subtotal) {
+        document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+        document.getElementById('total').textContent = `$${subtotal.toFixed(2)}`;
+      }
+      
+      // Event delegation for quantity changes and removal
+      document.getElementById('cartItems').addEventListener('click', function(e) {
+        if (e.target.classList.contains('remove-item')) {
+          const productId = parseInt(e.target.dataset.id);
+          removeFromCart(productId);
+          displayCartItems();
+        }
+        
+        if (e.target.classList.contains('quantity-btn')) {
+          const productId = parseInt(e.target.dataset.id);
+          const input = document.querySelector(`input[data-id="${productId}"]`);
+          let quantity = parseInt(input.value);
+          
+          if (e.target.classList.contains('minus') && quantity > 1) {
+            input.value = quantity - 1;
+          } else if (e.target.classList.contains('plus')) {
+            input.value = quantity + 1;
+          }
+          
+          updateQuantity(productId, parseInt(input.value));
+          displayCartItems();
+        }
+      });
+      
+      // Input change event for direct quantity edits
+      document.getElementById('cartItems').addEventListener('change', function(e) {
+        if (e.target.tagName === 'INPUT' && e.target.type === 'number') {
+          const productId = parseInt(e.target.dataset.id);
+          const newQuantity = parseInt(e.target.value);
+          
+          if (newQuantity > 0) {
+            updateQuantity(productId, newQuantity);
+            displayCartItems();
+          } else {
+            e.target.value = 1;
+          }
+        }
+      });
+      
+      // Initialize cart display
+      displayCartItems();
+    });
+  </script>
+</body>
+</html>

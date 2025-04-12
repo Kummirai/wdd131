@@ -7,67 +7,145 @@ const products = [
     price: 1299.99,
     description: "Thin and light professional laptop with powerful performance.",
     specs: [
-            "15.6\" 4K OLED Display",
-            "Intel Core i7-1165G7",
-            "16GB RAM",
-            "512GB SSD",
-            "Windows 11 Pro"
-        ],
+      "15.6\" 4K OLED Display",
+      "Intel Core i7-1165G7",
+      "16GB RAM",
+      "512GB SSD",
+      "Windows 11 Pro"
+    ],
     image: "images/ultra-book.jpg",
     thumbnails: [
-            "images/laptop-1-thumb1.jpg",
-            "images/laptop-1-thumb2.jpg",
-            "images/laptop-1-thumb3.jpg"
-        ],
+      "images/laptop-1-thumb1.jpg",
+      "images/laptop-1-thumb2.jpg",
+      "images/laptop-1-thumb3.jpg"
+    ],
     featured: true,
     reviews: [
       {
         author: "John D.",
         rating: 5,
         comment: "Fantastic laptop! The screen is amazing and it's so lightweight."
-            },
+      },
       {
         author: "Sarah M.",
         rating: 4,
         comment: "Great performance, but battery life could be better."
-            }
-        ]
-    },
+      }
+    ]
+  },
   {
+    id: 2,
     name: "GameMax Fury",
     category: "laptops",
     price: 924.3,
     description: "High-performance gaming machine with RGB keyboard.",
     specs: [
-      "15.6",
-      "FHD Display ",
+      "15.6\" FHD Display",
       "AMD Ryzen 7 5800H",
       "16GB RAM",
       "1TB SSD",
-      "Windows 11 Pro",
+      "Windows 11 Pro"
     ],
-    image: "../images/gamemax-fury.jpg",
+    image: "images/gamemax-fury.jpg",
     thumbnails: [
       "images/laptop-1-thumb1.jpg",
       "images/laptop-1-thumb2.jpg",
-      "images/laptop-1-thumb3.jpg",
+      "images/laptop-1-thumb3.jpg"
     ],
     featured: true,
     reviews: [
       {
         author: "Alex P.",
-        rating: "5",
+        rating: 5,
         comment: "Loving the performance and the build quality."
       },
       {
         author: "Jamie L.",
-        rating: "4",
+        rating: 4,
         comment: "Solid value for money."
-      },
-    ],
+      }
+    ]
   },
-    // More products...
+  {
+    id: 3,
+    name: "PixelPhone X",
+    category: "phones",
+    price: 799.99,
+    description: "Flagship smartphone with best-in-class camera.",
+    specs: [
+      "6.4\" AMOLED Display",
+      "Snapdragon 888",
+      "8GB RAM",
+      "128GB Storage",
+      "Android 12"
+    ],
+    image: "images/pixel-phone.jpg",
+    thumbnails: [
+      "images/phone-1-thumb1.jpg",
+      "images/phone-1-thumb2.jpg"
+    ],
+    featured: false,
+    reviews: [
+      {
+        author: "Mike T.",
+        rating: 5,
+        comment: "The camera is unbelievable!"
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "AirBuds Pro",
+    category: "accessories",
+    price: 199.99,
+    description: "Premium wireless earbuds with active noise cancellation.",
+    specs: [
+      "Active Noise Cancellation",
+      "24hr battery life",
+      "Wireless charging",
+      "Bluetooth 5.0"
+    ],
+    image: "images/airbuds.jpg",
+    thumbnails: [
+      "images/earbuds-thumb1.jpg"
+    ],
+    featured: true,
+    reviews: [
+      {
+        author: "Lisa K.",
+        rating: 4,
+        comment: "Great sound quality and battery life."
+      },
+      {
+        author: "David R.",
+        rating: 5,
+        comment: "Best earbuds I've ever owned."
+      }
+    ]
+  }
 ];
+
+// Initialize lazy loading for images
+function initLazyLoading() {
+  const lazyImages = document.querySelectorAll('.lazy');
+  
+  const lazyLoad = (target) => {
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    io.observe(target);
+  };
+
+  lazyImages.forEach(lazyLoad);
+}
 
 // Function to display featured products
 function displayFeaturedProducts() {
@@ -77,16 +155,18 @@ function displayFeaturedProducts() {
   const featuredProducts = products.filter(product => product.featured);
 
   featuredContainer.innerHTML = featuredProducts.map(product => `
-        <div class="product-card" data-id="${product.id}">
-            <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
-            <div class="product-info">
-                <h3 class="product-title">${product.name}</h3>
-                <p>${product.description}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-    `).join('');
+    <div class="product-card" data-id="${product.id}">
+      <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+      <div class="product-info">
+        <h3 class="product-title">${product.name}</h3>
+        <p>${product.description}</p>
+        <div class="product-price">$${product.price.toFixed(2)}</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  `).join('');
+
+  initLazyLoading();
 }
 
 // Function to display all products with filtering
@@ -135,17 +215,19 @@ function displayAllProducts() {
 
   // Display products
   productsContainer.innerHTML = filteredProducts.map(product => `
-        <div class="product-card" data-id="${product.id}">
-            <a href="product-detail.html?id=${product.id}">
-                <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
-                <div class="product-info">
-                    <h3 class="product-title">${product.name}</h3>
-                    <div class="product-price">$${product.price.toFixed(2)}</div>
-                </div>
-            </a>
-            <button class="add-to-cart">Add to Cart</button>
+    <div class="product-card" data-id="${product.id}">
+      <a href="product-detail.html?id=${product.id}">
+        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <div class="product-info">
+          <h3 class="product-title">${product.name}</h3>
+          <div class="product-price">$${product.price.toFixed(2)}</div>
         </div>
-    `).join('');
+      </a>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  `).join('');
+
+  initLazyLoading();
 }
 
 // Function to display product details
@@ -153,10 +235,22 @@ function displayProductDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get('id');
 
-  if (!productId) return;
+  if (!productId) {
+    window.location.href = 'products.html';
+    return;
+  }
 
   const product = products.find(p => p.id === parseInt(productId));
-  if (!product) return;
+  if (!product) {
+    document.querySelector('.product-detail-container').innerHTML = `
+      <div class="error-message">
+        <h2>Product Not Found</h2>
+        <p>The requested product could not be found.</p>
+        <a href="products.html" class="btn">Browse Products</a>
+      </div>
+    `;
+    return;
+  }
 
   // Set product info
   document.getElementById('detailProductName').textContent = product.name;
@@ -174,32 +268,33 @@ function displayProductDetails() {
   // Set thumbnails
   const thumbnailsContainer = document.getElementById('thumbnailImages');
   thumbnailsContainer.innerHTML = product.thumbnails.map((thumb, index) => `
-        <img src="placeholder.jpg" data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
-             class="thumbnail ${index === 0 ? 'active' : ''}" 
-             onclick="changeMainImage('${thumb}', this)">
-    `).join('');
+    <img src="placeholder.jpg" data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
+         class="thumbnail ${index === 0 ? 'active' : ''}" 
+         onclick="changeMainImage('${thumb}', this)">
+  `).join('');
 
   // Set specifications
   const specsContainer = document.getElementById('productSpecs');
   specsContainer.innerHTML = product.specs.map(spec => `
-        <div class="spec-item">
-            <span class="spec-dot">•</span>
-            <span class="spec-text">${spec}</span>
-        </div>
-    `).join('');
+    <div class="spec-item">
+      <span class="spec-dot">•</span>
+      <span class="spec-text">${spec}</span>
+    </div>
+  `).join('');
 
   // Set reviews
   const reviewsContainer = document.getElementById('productReviews');
   reviewsContainer.innerHTML = product.reviews.map(review => `
-        <div class="review">
-            <div class="review-author">${review.author}</div>
-            <div class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
-            <div class="review-comment">${review.comment}</div>
-        </div>
-    `).join('');
+    <div class="review">
+      <div class="review-author">${review.author}</div>
+      <div class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+      <div class="review-comment">${review.comment}</div>
+    </div>
+  `).join('');
 
   // Display related products
   displayRelatedProducts(product.category, product.id);
+  initLazyLoading();
 }
 
 // Function to display related products
@@ -217,17 +312,19 @@ function displayRelatedProducts(category, currentProductId) {
   }
 
   relatedContainer.innerHTML = relatedProducts.map(product => `
-        <div class="product-card" data-id="${product.id}">
-            <a href="product-detail.html?id=${product.id}">
-                <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
-                <div class="product-info">
-                    <h3 class="product-title">${product.name}</h3>
-                    <div class="product-price">$${product.price.toFixed(2)}</div>
-                </div>
-            </a>
-            <button class="add-to-cart">Add to Cart</button>
+    <div class="product-card" data-id="${product.id}">
+      <a href="product-detail.html?id=${product.id}">
+        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <div class="product-info">
+          <h3 class="product-title">${product.name}</h3>
+          <div class="product-price">$${product.price.toFixed(2)}</div>
         </div>
-    `).join('');
+      </a>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  `).join('');
+
+  initLazyLoading();
 }
 
 // Change main image when thumbnail is clicked
@@ -248,8 +345,23 @@ function initFilters() {
   if (sortSelect) sortSelect.addEventListener('change', displayAllProducts);
 }
 
+// Initialize mobile menu toggle
+function initMobileMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.main-nav ul');
+  
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+  }
+}
+
 // Initialize product pages
 document.addEventListener('DOMContentLoaded', function() {
+  initMobileMenu();
+  
   if (document.getElementById('featuredProducts')) {
     displayFeaturedProducts();
   }
