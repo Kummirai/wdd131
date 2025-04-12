@@ -13,7 +13,7 @@ const products = [
             "512GB SSD",
             "Windows 11 Pro"
         ],
-    image: "images/laptop-1.jpg",
+    image: "../images/ultra-book.jpg",
     thumbnails: [
             "images/laptop-1-thumb1.jpg",
             "images/laptop-1-thumb2.jpg",
