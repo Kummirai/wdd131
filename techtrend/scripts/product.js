@@ -13,7 +13,7 @@ const products = [
             "512GB SSD",
             "Windows 11 Pro"
         ],
-    image: "..images/ultra-book.jpg",
+    image: "images/ultra-book.jpg",
     thumbnails: [
             "images/laptop-1-thumb1.jpg",
             "images/laptop-1-thumb2.jpg",
@@ -78,9 +78,10 @@ function displayFeaturedProducts() {
 
   featuredContainer.innerHTML = featuredProducts.map(product => `
         <div class="product-card" data-id="${product.id}">
-            <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+            <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
+                <p>${product.description}</p>
                 <div class="product-price">$${product.price.toFixed(2)}</div>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
@@ -136,7 +137,7 @@ function displayAllProducts() {
   productsContainer.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-id="${product.id}">
             <a href="product-detail.html?id=${product.id}">
-                <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+                <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
                 <div class="product-info">
                     <h3 class="product-title">${product.name}</h3>
                     <div class="product-price">$${product.price.toFixed(2)}</div>
