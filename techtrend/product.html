@@ -1,14 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTrend - Latest Tech Products</title>
+    <meta name="author" name="Milton Kumirai">
+    <meta name="description" content="Discover the latest technology products at TechTrend. Laptops, smartphones, accessories and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+  </head>
 </head>
 
 <body>
+  <header>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>TechTrend</h1>
+        </div>
+        <nav class="main-nav">
+          <button class="hamburger" aria-label="Menu">☰</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-icons">
+            <button class="search-btn" aria-label="Search">🔍</button>
+            <button class="cart-btn" aria-label="Cart">🛒<span class="cart-count">0</span></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </header>
 
+  <main>
+    <section class="products-section">
+      <div class="container">
+        <h1>Our Products</h1>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="category">Category:</label>
+            <select id="category">
+              <option value="all">All Categories</option>
+              <option value="laptops">Laptops</option>
+              <option value="phones">Smartphones</option>
+              <option value="accessories">Accessories</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="price">Price Range:</label>
+            <select id="price">
+              <option value="all">All Prices</option>
+              <option value="0-500">Under $500</option>
+              <option value="500-1000">$500 - $1000</option>
+              <option value="1000-2000">$1000 - $2000</option>
+              <option value="2000+">Over $2000</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>TechTrend</h3>
+            <p>Your destination for the latest technology products.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+          <div class="footer-section" id="contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@techtrend.shop</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> TechTrend. All rights reserved.</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/cart.js" defer></script>
 </body>
 
 </html>
