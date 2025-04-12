@@ -1,11 +1,22 @@
 /* Base Styles */
+
+
+/*
+Primary: #1C1C1C (Jet Black)
+Secondary: #F3F3F3 (Platinum)
+Accent: #D4AF37 (Gold)
+Highlight: #8C7853 (Bronze)
+CTA: #BFA181 (Light Gold)
+
+
+*/
 :root {
-    --primary-blue: #2563eb;
-    --dark-navy: #1e293b;
+    --primary-blue: #d4af37;
+    --dark-navy: #1c1c1c;
     --light-gray: #f8f9fa;
-    --accent-green: #10b981;
+    --accent-green: #222831;
     --text-dark: #1e293b;
-    --text-light: #f8f9fa;
+    --text-light: #00ADB5;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }

@@ -13,7 +13,7 @@ const products = [
             "512GB SSD",
             "Windows 11 Pro"
         ],
-    image: "../images/ultra-book.jpg",
+    image: "..images/ultra-book.jpg",
     thumbnails: [
             "images/laptop-1-thumb1.jpg",
             "images/laptop-1-thumb2.jpg",
@@ -33,6 +33,39 @@ const products = [
             }
         ]
     },
+  {
+    name: "GameMax Fury",
+    category: "laptops",
+    price: 924.3,
+    description: "High-performance gaming machine with RGB keyboard.",
+    specs: [
+      "15.6",
+      "FHD Display ",
+      "AMD Ryzen 7 5800H",
+      "16GB RAM",
+      "1TB SSD",
+      "Windows 11 Pro",
+    ],
+    image: "../images/gamemax-fury.jpg",
+    thumbnails: [
+      "images/laptop-1-thumb1.jpg",
+      "images/laptop-1-thumb2.jpg",
+      "images/laptop-1-thumb3.jpg",
+    ],
+    featured: true,
+    reviews: [
+      {
+        author: "Alex P.",
+        rating: "5",
+        comment: "Loving the performance and the build quality."
+      },
+      {
+        author: "Jamie L.",
+        rating: "4",
+        comment: "Solid value for money."
+      },
+    ],
+  },
     // More products...
 ];
 
