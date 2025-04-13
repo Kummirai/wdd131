@@ -463,6 +463,26 @@ footer {
     width: 120px;
 }
 
+#cartItems{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+.item-image {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 2px;
+} 
+
+.item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .contact-grid {
