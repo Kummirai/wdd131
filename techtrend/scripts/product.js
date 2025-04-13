@@ -1,475 +1,390 @@
-// Product Data
-const products = [
-  {
-    id: 1,
-    name: "UltraBook Pro",
-    category: "laptops",
-    price: 1299.99,
-    description: "Thin and light professional laptop with powerful performance.",
-    specs: [
-      "15.6\" 4K OLED Display",
-      "Intel Core i7-1165G7",
-      "16GB RAM",
-      "512GB SSD",
-      "Windows 11 Pro"
-    ],
-    image: "images/laptop-1.jpg",
-    thumbnails: [
-      "images/laptop-1-thumb1.jpg",
-      "images/laptop-1-thumb2.jpg",
-      "images/laptop-1-thumb3.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "John D.",
-        rating: 5,
-        comment: "Fantastic laptop! The screen is amazing and it's so lightweight."
-      },
-      {
-        author: "Sarah M.",
-        rating: 4,
-        comment: "Great performance, but battery life could be better."
-      }
-    ]
-  },
-  {
-    id: 2,
-    name: "GameMax Fury",
-    category: "laptops",
-    price: 924.3,
-    description: "High-performance gaming machine with RGB keyboard.",
-    specs: [
-      "15.6\" FHD Display",
-      "AMD Ryzen 7 5800H",
-      "16GB RAM",
-      "1TB SSD",
-      "Windows 11 Pro"
-    ],
-    image: "images/mackbook-1.png",
-    thumbnails: [
-      "images/laptop-1-thumb1.jpg",
-      "images/laptop-1-thumb2.jpg",
-      "images/laptop-1-thumb3.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "Alex P.",
-        rating: 5,
-        comment: "Loving the performance and the build quality."
-      },
-      {
-        author: "Jamie L.",
-        rating: 4,
-        comment: "Solid value for money."
-      }
-    ]
-  },
-  {
-    id: 3,
-    name: "PixelPhone X",
-    category: "phones",
-    price: 799.99,
-    description: "Flagship smartphone with best-in-class camera.",
-    specs: [
-      "6.4\" AMOLED Display",
-      "Snapdragon 888",
-      "8GB RAM",
-      "128GB Storage",
-      "Android 12"
-    ],
-    image: "images/samsung-laptop.png",
-    thumbnails: [
-      "images/phone-1-thumb1.jpg",
-      "images/phone-1-thumb2.jpg"
-    ],
-    featured: false,
-    reviews: [
-      {
-        author: "Mike T.",
-        rating: 5,
-        comment: "The camera is unbelievable!"
-      }
-    ]
-  },
-  {
-    id: 4,
-    name: "AirBuds Pro",
-    category: "accessories",
-    price: 199.99,
-    description: "Premium wireless earbuds with active noise cancellation.",
-    specs: [
-      "Active Noise Cancellation",
-      "24hr battery life",
-      "Wireless charging",
-      "Bluetooth 5.0"
-    ],
-    image: "https://img.freepik.com/free-photo/woman-working-from-home-laptop_53876-132032.jpg?t=st=1744500986~exp=1744504586~hmac=fbfa0626beabe84425b5d77f3829d2afd64a149efa7fac094547ff21186927ae&w=740",
-    thumbnails: [
-      "images/earbuds-thumb1.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "Lisa K.",
-        rating: 4,
-        comment: "Great sound quality and battery life."
-      },
-      {
-        author: "David R.",
-        rating: 5,
-        comment: "Best earbuds I've ever owned."
-      }
-    ]
-  },
-  {
-    id: 1,
-    name: "UltraBook Pro",
-    category: "laptops",
-    price: 1299.99,
-    description: "Thin and light professional laptop with powerful performance.",
-    specs: [
-      "15.6\" 4K OLED Display",
-      "Intel Core i7-1165G7",
-      "16GB RAM",
-      "512GB SSD",
-      "Windows 11 Pro"
-    ],
-    image: "images/ultra-book.jpg",
-    thumbnails: [
-      "images/laptop-1-thumb1.jpg",
-      "images/laptop-1-thumb2.jpg",
-      "images/laptop-1-thumb3.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "John D.",
-        rating: 5,
-        comment: "Fantastic laptop! The screen is amazing and it's so lightweight."
-      },
-      {
-        author: "Sarah M.",
-        rating: 4,
-        comment: "Great performance, but battery life could be better."
-      }
-    ]
-  },
-  {
-    id: 2,
-    name: "GameMax Fury",
-    category: "laptops",
-    price: 924.3,
-    description: "High-performance gaming machine with RGB keyboard.",
-    specs: [
-      "15.6\" FHD Display",
-      "AMD Ryzen 7 5800H",
-      "16GB RAM",
-      "1TB SSD",
-      "Windows 11 Pro"
-    ],
-    image: "https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309642.jpg?t=st=1744500880~exp=1744504480~hmac=ef5c62c4c0f21797aaa387765e377d7ec9203d333ed3d1a1013e4684404e458c&w=740",
-    thumbnails: [
-      "images/laptop-1-thumb1.jpg",
-      "images/laptop-1-thumb2.jpg",
-      "images/laptop-1-thumb3.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "Alex P.",
-        rating: 5,
-        comment: "Loving the performance and the build quality."
-      },
-      {
-        author: "Jamie L.",
-        rating: 4,
-        comment: "Solid value for money."
-      }
-    ]
-  },
-  {
-    id: 3,
-    name: "PixelPhone X",
-    category: "phones",
-    price: 799.99,
-    description: "Flagship smartphone with best-in-class camera.",
-    specs: [
-      "6.4\" AMOLED Display",
-      "Snapdragon 888",
-      "8GB RAM",
-      "128GB Storage",
-      "Android 12"
-    ],
-    image: "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1744501062~exp=1744504662~hmac=9ae0b0b48e204a82ac14a7bef0d68387d254af3c3a3249505507b3b257139a27&w=740",
-    thumbnails: [
-      "images/phone-1-thumb1.jpg",
-      "images/phone-1-thumb2.jpg"
-    ],
-    featured: false,
-    reviews: [
-      {
-        author: "Mike T.",
-        rating: 5,
-        comment: "The camera is unbelievable!"
-      }
-    ]
-  },
-  {
-    id: 4,
-    name: "AirBuds Pro",
-    category: "accessories",
-    price: 199.99,
-    description: "Premium wireless earbuds with active noise cancellation.",
-    specs: [
-      "Active Noise Cancellation",
-      "24hr battery life",
-      "Wireless charging",
-      "Bluetooth 5.0"
-    ],
-    image: "https://img.freepik.com/free-photo/woman-working-from-home-laptop_53876-132032.jpg?t=st=1744500986~exp=1744504586~hmac=fbfa0626beabe84425b5d77f3829d2afd64a149efa7fac094547ff21186927ae&w=740",
-    thumbnails: [
-      "images/earbuds-thumb1.jpg"
-    ],
-    featured: true,
-    reviews: [
-      {
-        author: "Lisa K.",
-        rating: 4,
-        comment: "Great sound quality and battery life."
-      },
-      {
-        author: "David R.",
-        rating: 5,
-        comment: "Best earbuds I've ever owned."
-      }
-    ]
+// Global variable to store products
+let products = [];
+
+// Fetch products from JSON file
+async function fetchProducts() {
+  try {
+    const response = await fetch('./scripts/products.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    // Handle both array and object responses
+    let productsArray;
+    if (Array.isArray(data)) {
+      productsArray = data; // Direct array response
+    } else if (data && typeof data === 'object' && Array.isArray(data.products)) {
+      productsArray = data.products; // Object with products array
+    } else {
+      console.warn('Unexpected data format:', data);
+      return [];
+    }
+    
+    // Additional validation
+    if (!productsArray || productsArray.length === 0) {
+      console.warn('No products found in the data');
+      return [];
+    }
+    
+    return productsArray;
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    return [];
   }
-];
+}
 
 // Initialize lazy loading for images
 function initLazyLoading() {
   const lazyImages = document.querySelectorAll('.lazy');
   
-  const lazyLoad = (target) => {
-    const io = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.classList.remove('lazy');
-          observer.unobserve(img);
-        }
+  if ('IntersectionObserver' in window) {
+    const lazyLoad = (target) => {
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.onload = () => img.classList.remove('lazy');
+            observer.unobserve(img);
+          }
+        });
+      }, {
+        rootMargin: '200px 0px',
+        threshold: 0.01
       });
+
+      io.observe(target);
+    };
+
+    lazyImages.forEach(lazyLoad);
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    lazyImages.forEach(img => {
+      img.src = img.dataset.src;
+      img.classList.remove('lazy');
     });
-
-    io.observe(target);
-  };
-
-  lazyImages.forEach(lazyLoad);
+  }
 }
 
-// Function to display featured products
-function displayFeaturedProducts() {
+// Display featured products
+async function displayFeaturedProducts() {
   const featuredContainer = document.getElementById('featuredProducts');
   if (!featuredContainer) return;
 
-  const featuredProducts = products.filter(product => product.featured);
+  try {
+    featuredContainer.innerHTML = '<div class="loading-spinner"></div>';
+    
+    if (!Array.isArray(products)) {
+      products = await fetchProducts();
+    }
 
-  featuredContainer.innerHTML = featuredProducts.map(product => `
-    <div class="product-card" data-id="${product.id}">
-      <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
-      <div class="product-info">
-        <h3 class="product-title">${product.name}</h3>
-        <p>${product.description}</p>
-        <div class="product-price">$${product.price.toFixed(2)}</div>
-        <button class="add-to-cart">Add to Cart</button>
+    const featuredProducts = products.filter(product => product?.featured === true);
+    
+    if (featuredProducts.length === 0) {
+      featuredContainer.innerHTML = '<p class="no-products">No featured products available</p>';
+      return;
+    }
+
+    featuredContainer.innerHTML = featuredProducts.map(product => `
+      <div class="product-card" data-id="${product.id}">
+        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <div class="product-info">
+          <h3 class="product-title">${product.name}</h3>
+          <p class="product-description">${product.description || 'No description available'}</p>
+          <div class="product-price">$${(product.price || 0).toFixed(2)}</div>
+          <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
 
-  initLazyLoading();
+    initLazyLoading();
+    initAddToCartButtons();
+  } catch (error) {
+    console.error('Error displaying featured products:', error);
+    featuredContainer.innerHTML = `
+      <div class="error-message">
+        <p>Failed to load featured products</p>
+        <button class="retry-btn" onclick="displayFeaturedProducts()">Retry</button>
+      </div>
+    `;
+  }
 }
 
-// Function to display all products with filtering
-function displayAllProducts() {
+// Display all products with filtering
+async function displayAllProducts() {
   const productsContainer = document.getElementById('productsGrid');
   if (!productsContainer) return;
 
-  // Get filter values
-  const category = document.getElementById('category').value;
-  const priceRange = document.getElementById('price').value;
-  const sortBy = document.getElementById('sort').value;
-
-  // Filter products
-  let filteredProducts = [...products];
-
-  if (category !== 'all') {
-    filteredProducts = filteredProducts.filter(product => product.category === category);
-  }
-
-  if (priceRange !== 'all') {
-    const [min, max] = priceRange.split('-').map(Number);
-    if (priceRange.endsWith('+')) {
-      filteredProducts = filteredProducts.filter(product => product.price >= min);
-    } else {
-      filteredProducts = filteredProducts.filter(product =>
-        product.price >= min && product.price <= max
-      );
+  try {
+    productsContainer.innerHTML = '<div class="loading-spinner"></div>';
+    
+    if (!Array.isArray(products)) {
+      products = await fetchProducts();
     }
-  }
 
-  // Sort products
-  switch (sortBy) {
-    case 'price-low':
-      filteredProducts.sort((a, b) => a.price - b.price);
-      break;
-    case 'price-high':
-      filteredProducts.sort((a, b) => b.price - a.price);
-      break;
-    case 'name':
-      filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
-      break;
-    default:
-      // Featured is default (already sorted in array)
-      break;
-  }
+    const category = document.getElementById('category')?.value || 'all';
+    const priceRange = document.getElementById('price')?.value || 'all';
+    const sortBy = document.getElementById('sort')?.value || 'featured';
 
-  // Display products
-  productsContainer.innerHTML = filteredProducts.map(product => `
-    <div class="product-card" data-id="${product.id}">
-      <a href="product-detail.html?id=${product.id}">
-        <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
-        <div class="product-info">
-          <h3 class="product-title">${product.name}</h3>
-          <p class="product-description">${product.description}</p>
-          <div class="product-price">$${product.price.toFixed(2)}</div>
-        </div>
-      </a>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  `).join('');
+    let filteredProducts = [...products];
 
-  initLazyLoading();
-}
+    if (category !== 'all') {
+      filteredProducts = filteredProducts.filter(product => product?.category === category);
+    }
 
-// Function to display product details
-function displayProductDetails() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get('id');
+    if (priceRange !== 'all') {
+      const [min, max] = priceRange.split('-').map(Number);
+      if (priceRange.endsWith('+')) {
+        filteredProducts = filteredProducts.filter(product => (product.price || 0) >= min);
+      } else {
+        filteredProducts = filteredProducts.filter(product =>
+          (product.price || 0) >= min && (product.price || 0) <= max
+        );
+      }
+    }
 
-  if (!productId) {
-    window.location.href = 'products.html';
-    return;
-  }
+    switch (sortBy) {
+      case 'price-low': filteredProducts.sort((a, b) => (a.price || 0) - (b.price || 0)); break;
+      case 'price-high': filteredProducts.sort((a, b) => (b.price || 0) - (a.price || 0)); break;
+      case 'name': filteredProducts.sort((a, b) => (a.name || '').localeCompare(b.name || '')); break;
+      default: filteredProducts.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+    }
 
-  const product = products.find(p => p.id === parseInt(productId));
-  if (!product) {
-    document.querySelector('.product-detail-container').innerHTML = `
+    if (filteredProducts.length === 0) {
+      productsContainer.innerHTML = '<p class="no-products">No products match your filters</p>';
+      return;
+    }
+
+    productsContainer.innerHTML = filteredProducts.map(product => `
+      <div class="product-card" data-id="${product.id}">
+        <a href="product-detail.html?id=${product.id}">
+          <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+          <div class="product-info">
+            <h3 class="product-title">${product.name}</h3>
+            <p class="product-description">${product.description || ''}</p>
+            <div class="product-price">$${(product.price || 0).toFixed(2)}</div>
+          </div>
+        </a>
+        <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+      </div>
+    `).join('');
+
+    initLazyLoading();
+    initAddToCartButtons();
+  } catch (error) {
+    console.error('Error displaying products:', error);
+    productsContainer.innerHTML = `
       <div class="error-message">
-        <h2>Product Not Found</h2>
-        <p>The requested product could not be found.</p>
-        <a href="products.html" class="btn">Browse Products</a>
+        <p>Failed to load products</p>
+        <button class="retry-btn" onclick="displayAllProducts()">Retry</button>
       </div>
     `;
-    return;
   }
-
-  // Set product info
-  document.getElementById('detailProductName').textContent = product.name;
-  document.getElementById('productName').textContent = product.name;
-  document.getElementById('detailProductPrice').textContent = `$${product.price.toFixed(2)}`;
-  document.getElementById('productDescription').textContent = product.description;
-  document.getElementById('productCategory').textContent = product.category.charAt(0).toUpperCase() + product.category.slice(1);
-
-  // Set main image
-  const mainImage = document.getElementById('mainProductImage');
-  mainImage.src = "placeholder.jpg";
-  mainImage.dataset.src = product.image;
-  mainImage.alt = product.name;
-
-  // Set thumbnails
-  const thumbnailsContainer = document.getElementById('thumbnailImages');
-  thumbnailsContainer.innerHTML = product.thumbnails.map((thumb, index) => `
-    <img src="placeholder.jpg" data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
-         class="thumbnail ${index === 0 ? 'active' : ''}" 
-         onclick="changeMainImage('${thumb}', this)">
-  `).join('');
-
-  // Set specifications
-  const specsContainer = document.getElementById('productSpecs');
-  specsContainer.innerHTML = product.specs.map(spec => `
-    <div class="spec-item">
-      <span class="spec-dot">•</span>
-      <span class="spec-text">${spec}</span>
-    </div>
-  `).join('');
-
-  // Set reviews
-  const reviewsContainer = document.getElementById('productReviews');
-  reviewsContainer.innerHTML = product.reviews.map(review => `
-    <div class="review">
-      <div class="review-author">${review.author}</div>
-      <div class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
-      <div class="review-comment">${review.comment}</div>
-    </div>
-  `).join('');
-
-  // Display related products
-  displayRelatedProducts(product.category, product.id);
-  initLazyLoading();
 }
 
-// Function to display related products
-function displayRelatedProducts(category, currentProductId) {
+// Display product details
+async function displayProductDetails() {
+  const detailContainer = document.querySelector('.product-detail-container');
+  if (!detailContainer) return;
+
+  try {
+    detailContainer.innerHTML = '<div class="loading-spinner"></div>';
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    if (!productId) {
+      window.location.href = 'products.html';
+      return;
+    }
+
+    if (!Array.isArray(products)) {
+      products = await fetchProducts();
+    }
+
+    const product = products.find(p => p?.id === parseInt(productId));
+    
+    if (!product) {
+      detailContainer.innerHTML = `
+        <div class="error-message">
+          <h2>Product Not Found</h2>
+          <p>The requested product could not be found.</p>
+          <a href="products.html" class="btn">Browse Products</a>
+        </div>
+      `;
+      return;
+    }
+
+    // Render product details
+    detailContainer.innerHTML = `
+      <div class="product-gallery">
+        <div class="main-image">
+          <img id="mainProductImage" src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        </div>
+        <div class="thumbnails" id="thumbnailImages">
+          ${(product.thumbnails || []).map((thumb, index) => `
+            <img src="placeholder.jpg" data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
+                 class="thumbnail ${index === 0 ? 'active' : ''}" 
+                 onclick="changeMainImage('${thumb}', this)">
+          `).join('')}
+        </div>
+      </div>
+      <div class="product-info">
+        <h1 id="productName">${product.name}</h1>
+        <div class="price" id="detailProductPrice">$${(product.price || 0).toFixed(2)}</div>
+        <div class="category" id="productCategory">
+          ${product.category ? product.category.charAt(0).toUpperCase() + product.category.slice(1) : ''}
+        </div>
+        <div class="description" id="productDescription">
+          ${product.description || 'No description available'}
+        </div>
+        <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+      </div>
+      <div class="product-specs">
+        <h2>Specifications</h2>
+        <div id="productSpecs">
+          ${(product.specs || []).map(spec => `
+            <div class="spec-item">
+              <span class="spec-dot">•</span>
+              <span class="spec-text">${spec}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div class="product-reviews">
+        <h2>Reviews</h2>
+        <div id="productReviews">
+          ${(product.reviews || []).map(review => `
+            <div class="review">
+              <div class="review-author">${review.author || 'Anonymous'}</div>
+              <div class="review-rating">
+                ${'★'.repeat(review.rating || 0)}${'☆'.repeat(5 - (review.rating || 0))}
+              </div>
+              <div class="review-comment">${review.comment || 'No comment'}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      ${product.category ? `
+      <div class="related-products">
+        <h2>You May Also Like</h2>
+        <div id="relatedProducts"></div>
+      </div>
+      ` : ''}
+    `;
+
+    initLazyLoading();
+    initAddToCartButtons();
+    
+    if (product.category) {
+      await displayRelatedProducts(product.category, product.id);
+    }
+  } catch (error) {
+    console.error('Error displaying product details:', error);
+    detailContainer.innerHTML = `
+      <div class="error-message">
+        <p>Failed to load product details</p>
+        <button class="retry-btn" onclick="displayProductDetails()">Retry</button>
+      </div>
+    `;
+  }
+}
+
+// Display related products
+async function displayRelatedProducts(category, currentProductId) {
   const relatedContainer = document.getElementById('relatedProducts');
   if (!relatedContainer) return;
 
-  const relatedProducts = products
-    .filter(product => product.category === category && product.id !== currentProductId)
-    .slice(0, 4);
+  try {
+    relatedContainer.innerHTML = '<div class="loading-spinner small"></div>';
+    
+    if (!Array.isArray(products)) {
+      products = await fetchProducts();
+    }
 
-  if (relatedProducts.length === 0) {
-    relatedContainer.innerHTML = '<p>No related products found.</p>';
-    return;
+    const relatedProducts = products
+      .filter(product => product?.category === category && product?.id !== currentProductId)
+      .slice(0, 4);
+
+    if (relatedProducts.length === 0) {
+      relatedContainer.innerHTML = '<p class="no-products">No related products found</p>';
+      return;
+    }
+
+    relatedContainer.innerHTML = relatedProducts.map(product => `
+      <div class="product-card" data-id="${product.id}">
+        <a href="product-detail.html?id=${product.id}">
+          <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+          <div class="product-info">
+            <h3 class="product-title">${product.name}</h3>
+            <div class="product-price">$${(product.price || 0).toFixed(2)}</div>
+          </div>
+        </a>
+        <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+      </div>
+    `).join('');
+
+    initLazyLoading();
+    initAddToCartButtons();
+  } catch (error) {
+    console.error('Error displaying related products:', error);
+    relatedContainer.innerHTML = `
+      <div class="error-message">
+        <p>Failed to load related products</p>
+      </div>
+    `;
   }
-
-  relatedContainer.innerHTML = relatedProducts.map(product => `
-    <div class="product-card" data-id="${product.id}">
-      <a href="product-detail.html?id=${product.id}">
-        <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
-        <div class="product-info">
-          <h3 class="product-title">${product.name}</h3>
-          <div class="product-price">$${product.price.toFixed(2)}</div>
-        </div>
-      </a>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-  `).join('');
-
-  initLazyLoading();
 }
 
-// Change main image when thumbnail is clicked
+// Change main product image
 window.changeMainImage = function(src, element) {
-  document.getElementById('mainProductImage').src = src;
+  const mainImage = document.getElementById('mainProductImage');
+  if (!mainImage) return;
+  
+  mainImage.src = src;
   document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
   element.classList.add('active');
 };
 
-// Initialize event listeners for filters
+// Initialize add to cart buttons
+function initAddToCartButtons() {
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+      const productId = this.getAttribute('data-id');
+      if (!productId) return;
+      
+      // Add your cart logic here
+      console.log('Added product to cart:', productId);
+      // Example: addToCart(productId);
+      
+      // Visual feedback
+      this.textContent = 'Added!';
+      setTimeout(() => {
+        this.textContent = 'Add to Cart';
+      }, 2000);
+    });
+  });
+}
+
+// Initialize filters
 function initFilters() {
   const categorySelect = document.getElementById('category');
   const priceSelect = document.getElementById('price');
   const sortSelect = document.getElementById('sort');
 
-  if (categorySelect) categorySelect.addEventListener('change', displayAllProducts);
-  if (priceSelect) priceSelect.addEventListener('change', displayAllProducts);
-  if (sortSelect) sortSelect.addEventListener('change', displayAllProducts);
+  if (categorySelect) {
+    categorySelect.addEventListener('change', displayAllProducts);
+  }
+  if (priceSelect) {
+    priceSelect.addEventListener('change', displayAllProducts);
+  }
+  if (sortSelect) {
+    sortSelect.addEventListener('change', displayAllProducts);
+  }
 }
 
-// Initialize mobile menu toggle
+// Initialize mobile menu
 function initMobileMenu() {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.main-nav ul');
@@ -482,20 +397,28 @@ function initMobileMenu() {
   }
 }
 
-// Initialize product pages
-document.addEventListener('DOMContentLoaded', function() {
-  initMobileMenu();
-  
-  if (document.getElementById('featuredProducts')) {
-    displayFeaturedProducts();
-  }
+// Initialize the appropriate page
+document.addEventListener('DOMContentLoaded', async function() {
+  try {
+    initMobileMenu();
+    
+    // Load products first
+    products = await fetchProducts();
+    
+    // Initialize the appropriate page
+    if (document.getElementById('featuredProducts')) {
+      await displayFeaturedProducts();
+    }
 
-  if (document.getElementById('productsGrid')) {
-    displayAllProducts();
-    initFilters();
-  }
+    if (document.getElementById('productsGrid')) {
+      await displayAllProducts();
+      initFilters();
+    }
 
-  if (document.getElementById('mainProductImage')) {
-    displayProductDetails();
+    if (document.querySelector('.product-detail-container')) {
+      await displayProductDetails();
+    }
+  } catch (error) {
+    console.error('Initialization error:', error);
   }
 });
