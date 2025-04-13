@@ -13,7 +13,7 @@ const products = [
       "512GB SSD",
       "Windows 11 Pro"
     ],
-    image: "images/ultra-book.jpg",
+    image: "images/laptop-1.jpg",
     thumbnails: [
       "images/laptop-1-thumb1.jpg",
       "images/laptop-1-thumb2.jpg",
@@ -46,7 +46,7 @@ const products = [
       "1TB SSD",
       "Windows 11 Pro"
     ],
-    image: "https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309642.jpg?t=st=1744500880~exp=1744504480~hmac=ef5c62c4c0f21797aaa387765e377d7ec9203d333ed3d1a1013e4684404e458c&w=740",
+    image: "images/mackbook-1.png",
     thumbnails: [
       "images/laptop-1-thumb1.jpg",
       "images/laptop-1-thumb2.jpg",
@@ -79,7 +79,7 @@ const products = [
       "128GB Storage",
       "Android 12"
     ],
-    image: "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1744501062~exp=1744504662~hmac=9ae0b0b48e204a82ac14a7bef0d68387d254af3c3a3249505507b3b257139a27&w=740",
+    image: "images/samsung-laptop.png",
     thumbnails: [
       "images/phone-1-thumb1.jpg",
       "images/phone-1-thumb2.jpg"
