@@ -727,21 +727,20 @@ footer {
   }
   
   .btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #3498db;
+    padding: 12px 32px;
+    background-color: var(--dark-navy);
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.2s ease;
     margin-top: 15px;
   }
   
   .btn:hover:not(:disabled) {
-    background-color: #2980b9;
+    background-color: var(--text-dark);
+    color: var(--light-gray);
   }
   
   .btn:disabled {
