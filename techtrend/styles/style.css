@@ -196,7 +196,7 @@ header {
 }
 
 .product-info {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .product-title {
@@ -207,7 +207,7 @@ header {
 .product-description{
     font-size: 0.9rem;
     color: var(--accent-green);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     height: 3rem;
     overflow: hidden;
 }
@@ -215,7 +215,7 @@ header {
 .product-price {
     font-weight: 600;
     color: var(--primary-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .add-to-cart {
