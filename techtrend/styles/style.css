@@ -205,6 +205,12 @@ header {
     margin-bottom: 0.5rem;
 }
 
+.product-description{
+    font-size: 0.9rem;
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+}
+
 .product-price {
     font-weight: 600;
     color: var(--primary-blue);

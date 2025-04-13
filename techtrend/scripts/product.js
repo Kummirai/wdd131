@@ -343,6 +343,7 @@ function displayAllProducts() {
         <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
         <div class="product-info">
           <h3 class="product-title">${product.name}</h3>
+          <p class="product-description">${product.description}</p>
           <div class="product-price">$${product.price.toFixed(2)}</div>
         </div>
       </a>
