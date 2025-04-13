@@ -76,8 +76,8 @@
     },
     {
       "id": 4,
-      "name": "iPhone 15 Pro",
-      "category": "iphones",
+      "name": "iPhone 16 Pro",
+      "category": "Smartphones",
       "price": 999.00,
       "description": "The ultimate iPhone with pro camera system.",
       "specs": [
@@ -87,7 +87,7 @@
         "Pro camera system",
         "iOS 17"
       ],
-      "image": "images/iphone15-pro.jpg",
+      "image": "images/iphone-16.webp",
       "thumbnails": [
         "images/iphone-thumb1.jpg",
         "images/iphone-thumb2.jpg"
@@ -130,9 +130,9 @@
     },
     {
       "id": 6,
-      "name": "PlayStation 5",
+      "name": "PlayStation 4",
       "category": "consoles",
-      "price": 499.99,
+      "price": 799.99,
       "description": "Next-gen gaming console with ultra-high speed SSD.",
       "specs": [
         "4K UHD Blu-ray",
@@ -141,7 +141,7 @@
         "120fps support",
         "3D Audio"
       ],
-      "image": "images/ps5.jpg",
+      "image": "images/ps4-1.webp",
       "thumbnails": [
         "images/ps5-thumb1.jpg",
         "images/ps5-thumb2.jpg"
@@ -220,7 +220,7 @@
         "Foldable design",
         "3.5mm & Bluetooth"
       ],
-      "image": "images/studio-pro.jpg",
+      "image": "images/black-headphones.webp",
       "thumbnails": [
         "images/headphones-thumb1.jpg",
         "images/headphones-thumb2.jpg"
