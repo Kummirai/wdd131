@@ -209,6 +209,8 @@ header {
     font-size: 0.9rem;
     color: var(--accent-green);
     margin-bottom: 1rem;
+    height: 3rem;
+    overflow: hidden;
 }
 
 .product-price {
