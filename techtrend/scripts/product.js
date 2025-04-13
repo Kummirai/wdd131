@@ -122,6 +122,129 @@ const products = [
         comment: "Best earbuds I've ever owned."
       }
     ]
+  },
+  {
+    id: 1,
+    name: "UltraBook Pro",
+    category: "laptops",
+    price: 1299.99,
+    description: "Thin and light professional laptop with powerful performance.",
+    specs: [
+      "15.6\" 4K OLED Display",
+      "Intel Core i7-1165G7",
+      "16GB RAM",
+      "512GB SSD",
+      "Windows 11 Pro"
+    ],
+    image: "images/ultra-book.jpg",
+    thumbnails: [
+      "images/laptop-1-thumb1.jpg",
+      "images/laptop-1-thumb2.jpg",
+      "images/laptop-1-thumb3.jpg"
+    ],
+    featured: true,
+    reviews: [
+      {
+        author: "John D.",
+        rating: 5,
+        comment: "Fantastic laptop! The screen is amazing and it's so lightweight."
+      },
+      {
+        author: "Sarah M.",
+        rating: 4,
+        comment: "Great performance, but battery life could be better."
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "GameMax Fury",
+    category: "laptops",
+    price: 924.3,
+    description: "High-performance gaming machine with RGB keyboard.",
+    specs: [
+      "15.6\" FHD Display",
+      "AMD Ryzen 7 5800H",
+      "16GB RAM",
+      "1TB SSD",
+      "Windows 11 Pro"
+    ],
+    image: "https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309642.jpg?t=st=1744500880~exp=1744504480~hmac=ef5c62c4c0f21797aaa387765e377d7ec9203d333ed3d1a1013e4684404e458c&w=740",
+    thumbnails: [
+      "images/laptop-1-thumb1.jpg",
+      "images/laptop-1-thumb2.jpg",
+      "images/laptop-1-thumb3.jpg"
+    ],
+    featured: true,
+    reviews: [
+      {
+        author: "Alex P.",
+        rating: 5,
+        comment: "Loving the performance and the build quality."
+      },
+      {
+        author: "Jamie L.",
+        rating: 4,
+        comment: "Solid value for money."
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "PixelPhone X",
+    category: "phones",
+    price: 799.99,
+    description: "Flagship smartphone with best-in-class camera.",
+    specs: [
+      "6.4\" AMOLED Display",
+      "Snapdragon 888",
+      "8GB RAM",
+      "128GB Storage",
+      "Android 12"
+    ],
+    image: "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1744501062~exp=1744504662~hmac=9ae0b0b48e204a82ac14a7bef0d68387d254af3c3a3249505507b3b257139a27&w=740",
+    thumbnails: [
+      "images/phone-1-thumb1.jpg",
+      "images/phone-1-thumb2.jpg"
+    ],
+    featured: false,
+    reviews: [
+      {
+        author: "Mike T.",
+        rating: 5,
+        comment: "The camera is unbelievable!"
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "AirBuds Pro",
+    category: "accessories",
+    price: 199.99,
+    description: "Premium wireless earbuds with active noise cancellation.",
+    specs: [
+      "Active Noise Cancellation",
+      "24hr battery life",
+      "Wireless charging",
+      "Bluetooth 5.0"
+    ],
+    image: "https://img.freepik.com/free-photo/woman-working-from-home-laptop_53876-132032.jpg?t=st=1744500986~exp=1744504586~hmac=fbfa0626beabe84425b5d77f3829d2afd64a149efa7fac094547ff21186927ae&w=740",
+    thumbnails: [
+      "images/earbuds-thumb1.jpg"
+    ],
+    featured: true,
+    reviews: [
+      {
+        author: "Lisa K.",
+        rating: 4,
+        comment: "Great sound quality and battery life."
+      },
+      {
+        author: "David R.",
+        rating: 5,
+        comment: "Best earbuds I've ever owned."
+      }
+    ]
   }
 ];
 
@@ -156,7 +279,7 @@ function displayFeaturedProducts() {
 
   featuredContainer.innerHTML = featuredProducts.map(product => `
     <div class="product-card" data-id="${product.id}">
-      <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+      <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
       <div class="product-info">
         <h3 class="product-title">${product.name}</h3>
         <p>${product.description}</p>
@@ -217,7 +340,7 @@ function displayAllProducts() {
   productsContainer.innerHTML = filteredProducts.map(product => `
     <div class="product-card" data-id="${product.id}">
       <a href="product-detail.html?id=${product.id}">
-        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
         <div class="product-info">
           <h3 class="product-title">${product.name}</h3>
           <div class="product-price">$${product.price.toFixed(2)}</div>
@@ -314,7 +437,7 @@ function displayRelatedProducts(category, currentProductId) {
   relatedContainer.innerHTML = relatedProducts.map(product => `
     <div class="product-card" data-id="${product.id}">
       <a href="product-detail.html?id=${product.id}">
-        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
         <div class="product-info">
           <h3 class="product-title">${product.name}</h3>
           <div class="product-price">$${product.price.toFixed(2)}</div>
