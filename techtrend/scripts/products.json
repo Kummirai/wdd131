@@ -1,127 +1,640 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "UltraBook Pro",
-        "category": "laptops",
-        "price": 1299.99,
-        "description": "Thin and light professional laptop with powerful performance.",
-        "specs": [
-          "15.6\" 4K OLED Display",
-          "Intel Core i7-1165G7",
-          "16GB RAM",
-          "512GB SSD",
-          "Windows 11 Pro"
-        ],
-        "image": "images/ultra1-book.jpg",
-        "thumbnails": [
-          "images/laptop-1-thumb1.jpg",
-          "images/laptop-1-thumb2.jpg",
-          "images/laptop-1-thumb3.jpg"
-        ],
-        "featured": true,
-        "reviews": [
-          {
-            "author": "John D.",
-            "rating": 5,
-            "comment": "Fantastic laptop! The screen is amazing and it's so lightweight."
-          },
-          {
-            "author": "Sarah M.",
-            "rating": 4,
-            "comment": "Great performance, but battery life could be better."
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "GameMax Fury",
-        "category": "laptops",
-        "price": 924.3,
-        "description": "High-performance gaming machine with RGB keyboard.",
-        "specs": [
-          "15.6\" FHD Display",
-          "AMD Ryzen 7 5800H",
-          "16GB RAM",
-          "1TB SSD",
-          "Windows 11 Pro"
-        ],
-        "image": "images/gamemax-fury.jpg",
-        "thumbnails": [
-          "images/laptop-1-thumb1.jpg",
-          "images/laptop-1-thumb2.jpg",
-          "images/laptop-1-thumb3.jpg"
-        ],
-        "featured": true,
-        "reviews": [
-          {
-            "author": "Alex P.",
-            "rating": 5,
-            "comment": "Loving the performance and the build quality."
-          },
-          {
-            "author": "Jamie L.",
-            "rating": 4,
-            "comment": "Solid value for money."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "PixelPhone X",
-        "category": "phones",
-        "price": 799.99,
-        "description": "Flagship smartphone with best-in-class camera.",
-        "specs": [
-          "6.4\" AMOLED Display",
-          "Snapdragon 888",
-          "8GB RAM",
-          "128GB Storage",
-          "Android 12"
-        ],
-        "image": "images/pixel-phone.jpg",
-        "thumbnails": [
-          "images/phone-1-thumb1.jpg",
-          "images/phone-1-thumb2.jpg"
-        ],
-        "featured": false,
-        "reviews": [
-          {
-            "author": "Mike T.",
-            "rating": 5,
-            "comment": "The camera is unbelievable!"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "name": "AirBuds Pro",
-        "category": "accessories",
-        "price": 199.99,
-        "description": "Premium wireless earbuds with active noise cancellation.",
-        "specs": [
-          "Active Noise Cancellation",
-          "24hr battery life",
-          "Wireless charging",
-          "Bluetooth 5.0"
-        ],
-        "image": "images/airbuds.jpg",
-        "thumbnails": [
-          "images/earbuds-thumb1.jpg"
-        ],
-        "featured": true,
-        "reviews": [
-          {
-            "author": "Lisa K.",
-            "rating": 4,
-            "comment": "Great sound quality and battery life."
-          },
-          {
-            "author": "David R.",
-            "rating": 5,
-            "comment": "Best earbuds I've ever owned."
-          }
-        ]
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "AirPods Pro 3",
+      "category": "earbuds",
+      "price": 249.99,
+      "description": "Premium wireless earbuds with spatial audio and ANC.",
+      "specs": [
+        "Active Noise Cancellation",
+        "6hr battery life (30hr with case)",
+        "Spatial audio",
+        "Bluetooth 5.3",
+        "Wireless charging"
+      ],
+      "image": "images/airpods-pro3.jpg",
+      "thumbnails": [
+        "images/earbuds-thumb1.jpg",
+        "images/earbuds-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Taylor S.",
+          "rating": 5,
+          "comment": "The noise cancellation is incredible!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "iPod Touch 7th Gen",
+      "category": "ipods",
+      "price": 199.00,
+      "description": "The portable entertainment powerhouse.",
+      "specs": [
+        "4\" Retina Display",
+        "A10 Fusion chip",
+        "32GB Storage",
+        "iOS 12",
+        "40hr music playback"
+      ],
+      "image": "images/ipod-touch.jpg",
+      "thumbnails": [
+        "images/ipod-thumb1.jpg"
+      ],
+      "featured": false,
+      "reviews": []
+    },
+    {
+      "id": 3,
+      "name": "ProDesk Elite",
+      "category": "desktop computers",
+      "price": 1499.99,
+      "description": "Professional workstation for creators and developers.",
+      "specs": [
+        "Intel Core i9-12900K",
+        "32GB DDR5 RAM",
+        "1TB NVMe SSD + 2TB HDD",
+        "NVIDIA RTX 3080",
+        "Windows 11 Pro"
+      ],
+      "image": "images/prodesk-elite.jpg",
+      "thumbnails": [
+        "images/desktop-thumb1.jpg",
+        "images/desktop-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Chris P.",
+          "rating": 5,
+          "comment": "Handles 4K video editing like a champ!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "iPhone 15 Pro",
+      "category": "iphones",
+      "price": 999.00,
+      "description": "The ultimate iPhone with pro camera system.",
+      "specs": [
+        "6.1\" Super Retina XDR",
+        "A17 Pro chip",
+        "128GB Storage",
+        "Pro camera system",
+        "iOS 17"
+      ],
+      "image": "images/iphone15-pro.jpg",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "UltraBook Pro",
+      "category": "laptops",
+      "price": 1299.99,
+      "description": "Thin and light professional laptop with powerful performance.",
+      "specs": [
+        "15.6\" 4K OLED Display",
+        "Intel Core i7-1360P",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11 Pro"
+      ],
+      "image": "images/ultrabook-pro.jpg",
+      "thumbnails": [
+        "images/laptop-thumb1.jpg",
+        "images/laptop-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "John D.",
+          "rating": 5,
+          "comment": "Fantastic laptop! The screen is amazing."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "PlayStation 5",
+      "category": "consoles",
+      "price": 499.99,
+      "description": "Next-gen gaming console with ultra-high speed SSD.",
+      "specs": [
+        "4K UHD Blu-ray",
+        "825GB SSD",
+        "Ray tracing",
+        "120fps support",
+        "3D Audio"
+      ],
+      "image": "images/ps5.jpg",
+      "thumbnails": [
+        "images/ps5-thumb1.jpg",
+        "images/ps5-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Marcus L.",
+          "rating": 5,
+          "comment": "The load times are revolutionary!"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Xbox Series X",
+      "category": "consoles",
+      "price": 499.99,
+      "description": "The fastest, most powerful Xbox ever.",
+      "specs": [
+        "4K gaming at 120fps",
+        "1TB SSD",
+        "Backward compatibility",
+        "Quick Resume",
+        "Dolby Vision"
+      ],
+      "image": "images/xbox-seriesx.jpg",
+      "thumbnails": [
+        "images/xbox-thumb1.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Jordan K.",
+          "rating": 4,
+          "comment": "Game Pass makes this an incredible value."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "BoomBox 360",
+      "category": "wireless speakers",
+      "price": 179.99,
+      "description": "360° sound with deep bass and waterproof design.",
+      "specs": [
+        "24hr battery life",
+        "IP67 waterproof",
+        "Party pairing",
+        "Bluetooth 5.2",
+        "Built-in mic"
+      ],
+      "image": "images/boombox-360.jpg",
+      "thumbnails": [
+        "images/speaker-thumb1.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Olivia T.",
+          "rating": 4,
+          "comment": "Great for pool parties!"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Studio Pro HD",
+      "category": "headphones",
+      "price": 349.99,
+      "description": "Professional studio headphones with exceptional clarity.",
+      "specs": [
+        "Active Noise Cancellation",
+        "40mm drivers",
+        "30hr battery",
+        "Foldable design",
+        "3.5mm & Bluetooth"
+      ],
+      "image": "images/studio-pro.jpg",
+      "thumbnails": [
+        "images/headphones-thumb1.jpg",
+        "images/headphones-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "DJ Carlos",
+          "rating": 5,
+          "comment": "Perfect for mixing tracks on the go."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "SmartWatch Ultra",
+      "category": "smartwatches",
+      "price": 399.99,
+      "description": "The ultimate smartwatch with health tracking and GPS.",
+      "specs": [
+        "Always-on display",
+        "ECG & Blood Oxygen",
+        "GPS + Cellular",
+        "Water resistant up to 50m",
+        "Fitness tracking"
+      ],
+      "image": "images/smartwatch-ultra.jpg",
+      "thumbnails": [
+        "images/smartwatch-thumb1.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Sarah J.",
+          "rating": 5,
+          "comment": "Great for fitness tracking!"
+        }
+      ]
+    },{
+      "id": 11,
+      "name": "Smart Home Hub",
+      "category": "smart home",
+      "price": 99.99,
+      "description": "Control all your smart devices from one place.",
+      "specs": [
+        "Voice control",
+        "Compatible with Alexa, Google Assistant",
+        "Wi-Fi & Zigbee support",
+        "Smart routines",
+        "Remote access"
+      ],
+      "image": "images/smart-home-hub.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb1.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Mike R.",
+          "rating": 4,
+          "comment": "Works well with my smart lights."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Smart Light Bulb",
+      "category": "smart home",
+      "price": 19.99,
+      "description": "Smart LED bulb with color changing and scheduling.",
+      "specs": [
+        "16 million colors",
+        "Voice control",
+        "Scheduling",
+        "Energy efficient",
+        "Compatible with Alexa, Google Assistant"
+      ],
+      "image": "images/smart-light-bulb.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb2.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Anna B.",
+          "rating": 5,
+          "comment": "Love the color options!"
+        }
+      ]
+    },{
+      "id": 13,
+      "name": "Smart Security Camera",
+      "category": "smart home",
+      "price": 129.99,
+      "description": "1080p HD security camera with night vision.",
+      "specs": [
+        "1080p HD video",
+        "Night vision",
+        "Two-way audio",
+        "Motion detection",
+        "Cloud storage"
+      ],
+      "image": "images/smart-security-camera.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb3.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Tom H.",
+          "rating": 4,
+          "comment": "Good quality for the price."
+        }
+      ]
+    },{
+      "id": 14,
+      "name": "Smart Thermostat",
+      "category": "smart home",
+      "price": 129.99,
+      "description": "Smart thermostat with energy-saving features.",
+      "specs": [
+        "Wi-Fi enabled",
+        "Energy saving mode",
+        "Remote control",
+        "Learning capabilities",
+        "Compatible with most HVAC systems"
+      ],
+      "image": "images/smart-thermostat.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb4.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Lisa C.",
+          "rating": 5,
+          "comment": "Saved me a lot on my energy bill!"
+        }
+      ]
+    },{
+      "id": 15,
+      "name": "Smart Door Lock",
+      "category": "smart home",
+      "price": 199.99,
+      "description": "Keyless entry smart lock with remote access.",
+      "specs": [
+        "Keyless entry",
+        "Remote access",
+        "Auto-lock feature",
+        "Voice control",
+        "Compatible with Alexa, Google Assistant"
+      ],
+      "image": "images/smart-door-lock.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb5.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Jake W.",
+          "rating": 4,
+          "comment": "Easy to install and use."
+        }
+      ]
+    },{
+      "id": 16,
+      "name": "Smart Plug",
+      "category": "smart home",
+      "price": 29.99,
+      "description": "Smart plug for controlling devices remotely.",
+      "specs": [
+        "Voice control",
+        "Scheduling",
+        "Energy monitoring",
+        "Compact design",
+        "Compatible with Alexa, Google Assistant"
+      ],
+      "image": "images/smart-plug.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb6.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Sophie L.",
+          "rating": 5,
+          "comment": "Great for automating my lamps."
+        }
+      ]
+    },{
+      "id": 17,
+      "name": "Smart Vacuum Cleaner",
+      "category": "smart home",
+      "price": 299.99,
+      "description": "Robot vacuum with smart mapping and scheduling.",
+      "specs": [
+        "Smart mapping",
+        "Scheduling",
+        "Voice control",
+        "Automatic dirt disposal",
+        "Compatible with Alexa, Google Assistant"
+      ],
+      "image": "images/smart-vacuum.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb7.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Kevin M.",
+          "rating": 5,
+          "comment": "Cleans my house while I'm at work!"
+        }
+      ]
+    },{
+      "id": 18,
+      "name": "Smart Air Purifier",
+      "category": "smart home",
+      "price": 249.99,
+      "description": "Smart air purifier with HEPA filter and air quality monitoring.",
+      "specs": [
+        "HEPA filter",
+        "Air quality monitoring",
+        "Remote control",
+        "Quiet operation",
+        "Compatible with Alexa, Google Assistant"
+      ],
+      "image": "images/smart-air-purifier.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb8.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Rachel N.",
+          "rating": 5,
+          "comment": "Helps with my allergies!"
+        }
+      ]
+    },{
+      "id": 19,
+      "name": "Smart Coffee Maker",
+      "category": "smart home",
+      "price": 99.99,
+      "description": "Smart coffee maker with scheduling and voice control.",
+      "specs": [
+        "Voice control",
+        "Scheduling",
+        "Built-in grinder",
+        "Compatible with Alexa, Google Assistant",
+        "12-cup capacity"
+      ],
+      "image": "images/smart-coffee-maker.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb9.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Mark T.",
+          "rating": 5,
+          "comment": "Love waking up to fresh coffee!"
+        }
+      ]
+    },{
+      "id": 20,
+      "name": "Smart Refrigerator",
+      "category": "smart home",
+      "price": 1999.99,
+      "description": "Smart refrigerator with touch screen and inventory management.",
+      "specs": [
+        "Touch screen display",
+        "Inventory management",
+        "Voice control",
+        "Energy efficient",
+        "Wi-Fi enabled"
+      ],
+      "image": "images/smart-refrigerator.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb10.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Laura G.",
+          "rating": 5,
+          "comment": "Keeps track of my groceries!"
+        }
+      ]
+    },{
+      "id": 21,
+      "name": "Smart Oven",
+      "category": "smart home",
+      "price": 1499.99,
+      "description": "Smart oven with remote control and recipe suggestions.",
+      "specs": [
+        "Remote control",
+        "Recipe suggestions",
+        "Self-cleaning",
+        "Energy efficient",
+        "Wi-Fi enabled"
+      ],
+      "image": "images/smart-oven.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb11.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Steve H.",
+          "rating": 5,
+          "comment": "Cooking has never been easier!"
+        }
+      ]
+    },{
+      "id": 22,
+      "name": "Smart Dishwasher",
+      "category": "smart home",
+      "price": 899.99,
+      "description": "Smart dishwasher with energy-saving features.",
+      "specs": [
+        "Energy efficient",
+        "Remote control",
+        "Quiet operation",
+        "Multiple wash cycles",
+        "Wi-Fi enabled"
+      ],
+      "image": "images/smart-dishwasher.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb12.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Nancy P.",
+          "rating": 5,
+          "comment": "Cleans dishes perfectly!"
+        }
+      ]
+    },{
+      "id": 23,
+      "name": "Smart Washing Machine",
+      "category": "smart home",
+      "price": 799.99,
+      "description": "Smart washing machine with energy-saving features.",
+      "specs": [
+        "Energy efficient",
+        "Remote control",
+        "Multiple wash cycles",
+        "Wi-Fi enabled",
+        "Quiet operation"
+      ],
+      "image": "images/smart-washing-machine.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb13.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Karen W.",
+          "rating": 5,
+          "comment": "Washes clothes perfectly!"
+        }
+      ]
+    },{
+      "id": 24,
+      "name": "Smart Dryer",
+      "category": "smart home",
+      "price": 799.99,
+      "description": "Smart dryer with energy-saving features.",
+      "specs": [
+        "Energy efficient",
+        "Remote control",
+        "Multiple drying cycles",
+        "Wi-Fi enabled",
+        "Quiet operation"
+      ],
+      "image": "images/smart-dryer.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb14.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Brian J.",
+          "rating": 5,
+          "comment": "Dries clothes quickly!"
+        }
+      ]
+    },{
+      "id": 25,
+      "name": "Smart Air Conditioner",
+      "category": "smart home",
+      "price": 499.99,
+      "description": "Smart air conditioner with remote control and scheduling.",
+      "specs": [
+        "Remote control",
+        "Scheduling",
+        "Energy efficient",
+        "Wi-Fi enabled",
+        "Quiet operation"
+      ],
+      "image": "images/smart-air-conditioner.jpg",
+      "thumbnails": [
+        "images/smart-home-thumb15.jpg"
+      ],
+      "featured": false,
+      "reviews": [
+        {
+          "author": "Jessica F.",
+          "rating": 5,
+          "comment": "Keeps my home cool and comfortable!"
+        }
+      ]
+    }
+  ]
+}
