@@ -36,7 +36,6 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1rem;
     color: var(--dark-navy);
 }
 
@@ -77,6 +76,7 @@ a:hover {
 
 /* Header Styles */
 header {
+    padding: 2rem;
     background-color: var(--light-gray);
     color: var(--accent-green);
     padding: 1rem 0;
@@ -104,7 +104,8 @@ header {
 
 .main-nav ul li a {
     color: var(--accent-green);
-    font-weight: 500;
+    font-weight: 200;
+    font-size: 0.85rem;
 }
 
 .nav-icons {
