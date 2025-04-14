@@ -1,6 +1,15 @@
 // Global variable to store products
 let products = [];
 
+// General site functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Set current year in footer
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+  
+  // Set last modified date
+  document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
+});
+
 // Fetch products from JSON file
 async function fetchProducts() {
   try {
