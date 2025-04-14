@@ -95,7 +95,7 @@ header {
   color: var(--accent-green);
   font-weight: 200;
   font-size: 0.85rem;
-  
+  display: block;
 }
 
 .main-nav ul li{
