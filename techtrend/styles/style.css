@@ -231,7 +231,7 @@ header {
 }
 
 .add-to-cart:hover {
-  background-color: #0d9b6e;
+  background-color: var(--primary-blue);
 }
 
 /* Filters Section */
