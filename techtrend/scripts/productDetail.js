@@ -95,11 +95,6 @@ function renderProductDetails(product) {
         ${renderVariants(product)}
         ${renderSpecs(product)}
         
-        <div class="add-to-cart-container">
-          <button class="btn add-to-cart" data-id="${product.id}">
-            Add to Cart
-          </button>
-        </div>
       </div>
 
       <!-- Additional Sections -->
