@@ -874,7 +874,7 @@ footer {
   /* Product Detail Page Styles */
   .product-detail-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     margin: 2rem 0;
   }
