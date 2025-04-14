@@ -95,24 +95,12 @@ header {
   color: var(--accent-green);
   font-weight: 200;
   font-size: 0.85rem;
-  display: block;
-  margin-left: 1.8rem;
 }
 
-.main-nav ul li{
-  width: 100%;
-  display: block;
-  padding: 1rem;
+.main-nav ul li {
+  margin-right: 2rem;
 }
 
-
-.main-nav ul li:hover {
-  background-color: var(--primary-blue);
-}
-
-.main-nav ul li:hover a {
-  color: var(--light-gray);
-}
 .nav-icons {
   display: flex;
   gap: 1rem;
@@ -908,6 +896,29 @@ footer {
       align-items: center;
       padding: 2rem 0;
       transition: var(--transition);
+  }
+
+  .main-nav ul li a {
+    color: var(--accent-green);
+    font-weight: 200;
+    font-size: 0.85rem;
+    display: block;
+    margin-left: 1.8rem;
+  }
+  
+  .main-nav ul li{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+  
+  
+  .main-nav ul li:hover {
+    background-color: var(--primary-blue);
+  }
+  
+  .main-nav ul li:hover a {
+    color: var(--light-gray);
   }
   
   .cart-item{
