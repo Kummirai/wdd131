@@ -191,7 +191,6 @@ function renderAdditionalSections(product) {
               ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
             </span>
           </div>
-          <p class="review-text">${review.text}</p>
         </div>
       `).join('')}
     </div>
