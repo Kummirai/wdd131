@@ -89,15 +89,29 @@ header {
 .main-nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
 }
 
 .main-nav ul li a {
   color: var(--accent-green);
   font-weight: 200;
   font-size: 0.85rem;
+  
 }
 
+.main-nav ul li{
+  width: 100%;
+  display: block;
+  padding: 1rem;
+}
+
+
+.main-nav ul li:hover {
+  background-color: var(--primary-blue);
+}
+
+.main-nav ul li:hover a {
+  color: var(--light-gray);
+}
 .nav-icons {
   display: flex;
   gap: 1rem;
