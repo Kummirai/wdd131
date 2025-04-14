@@ -130,7 +130,7 @@
     },
     {
       "id": 6,
-      "name": "PlayStation 4",
+      "name": "PlayStation 5",
       "category": "consoles",
       "price": 799.99,
       "description": "Next-gen gaming console with ultra-high speed SSD.",
@@ -259,7 +259,8 @@
           "comment": "Great for fitness tracking!"
         }
       ]
-    },{
+    },
+    {
       "id": 11,
       "name": "Smart Home Hub",
       "category": "smart home",
@@ -287,16 +288,16 @@
     },
     {
       "id": 12,
-      "name": "iMac",
-      "category": "laptops",
-      "price": 19.99,
-      "description": "Smart LED bulb with color changing and scheduling.",
+      "name": "iMac Pro",
+      "category": "desktop computers",
+      "price": 1999.99,
+      "description": "Professional all-in-one desktop with stunning display.",
       "specs": [
-        "16 million colors",
-        "Voice control",
-        "Scheduling",
-        "Energy efficient",
-        "Compatible with Alexa, Google Assistant"
+        "27\" 5K Retina display",
+        "Intel Xeon W processor",
+        "32GB RAM",
+        "1TB SSD",
+        "Radeon Pro Vega 56"
       ],
       "image": "images/imac-2.webp",
       "thumbnails": [
@@ -307,21 +308,22 @@
         {
           "author": "Anna B.",
           "rating": 5,
-          "comment": "Love the color options!"
+          "comment": "Perfect for graphic design work!"
         }
       ]
-    },{
+    },
+    {
       "id": 13,
       "name": "iPhone 14",
       "category": "phones",
       "price": 729.99,
-      "description": "1080p HD security camera with night vision.",
+      "description": "Advanced smartphone with professional camera system.",
       "specs": [
-        "1080p HD video",
-        "Night vision",
-        "Two-way audio",
-        "Motion detection",
-        "Cloud storage"
+        "6.1\" Super Retina XDR",
+        "A15 Bionic chip",
+        "128GB Storage",
+        "Advanced camera system",
+        "iOS 16"
       ],
       "image": "images/iphone-14.webp",
       "thumbnails": [
@@ -332,21 +334,22 @@
         {
           "author": "Tom H.",
           "rating": 4,
-          "comment": "Good quality for the price."
+          "comment": "Excellent performance and camera quality."
         }
       ]
-    },{
+    },
+    {
       "id": 14,
-      "name": "Monitor",
-      "category": "laptops",
+      "name": "UltraHD Monitor",
+      "category": "monitors",
       "price": 429.99,
-      "description": "Smart thermostat with energy-saving features.",
+      "description": "27-inch 4K monitor with HDR support.",
       "specs": [
-        "Wi-Fi enabled",
-        "Energy saving mode",
-        "Remote control",
-        "Learning capabilities",
-        "Compatible with most HVAC systems"
+        "27\" 4K UHD",
+        "HDR10 support",
+        "IPS panel",
+        "99% sRGB",
+        "HDMI/DisplayPort"
       ],
       "image": "images/monitor-1.webp",
       "thumbnails": [
@@ -357,21 +360,22 @@
         {
           "author": "Lisa C.",
           "rating": 5,
-          "comment": "Saved me a lot on my energy bill!"
+          "comment": "Crisp colors and great viewing angles!"
         }
       ]
-    },{
+    },
+    {
       "id": 15,
-      "name": "Parkard Bell",
+      "name": "Packard Bell Laptop",
       "category": "laptops",
       "price": 499.99,
-      "description": "Keyless entry smart lock with remote access.",
+      "description": "Affordable laptop for everyday computing.",
       "specs": [
-        "Keyless entry",
-        "Remote access",
-        "Auto-lock feature",
-        "Voice control",
-        "Compatible with Alexa, Google Assistant"
+        "15.6\" Full HD",
+        "Intel Core i5",
+        "8GB RAM",
+        "256GB SSD",
+        "Windows 11"
       ],
       "image": "images/parkard-bell.webp",
       "thumbnails": [
@@ -382,21 +386,22 @@
         {
           "author": "Jake W.",
           "rating": 4,
-          "comment": "Easy to install and use."
+          "comment": "Great value for the price."
         }
       ]
-    },{
+    },
+    {
       "id": 16,
-      "name": "Xbox controller",
+      "name": "Xbox Controller",
       "category": "accessories",
-      "price": 29.99,
-      "description": "Smart plug for controlling devices remotely.",
+      "price": 59.99,
+      "description": "Wireless controller for Xbox Series X/S.",
       "specs": [
-        "Voice control",
-        "Scheduling",
-        "Energy monitoring",
-        "Compact design",
-        "Compatible with Alexa, Google Assistant"
+        "Wireless connectivity",
+        "Bluetooth support",
+        "3.5mm audio jack",
+        "Textured grip",
+        "Up to 40hr battery"
       ],
       "image": "images/xbox-controller.webp",
       "thumbnails": [
@@ -407,21 +412,22 @@
         {
           "author": "Sophie L.",
           "rating": 5,
-          "comment": "Great for automating my lamps."
+          "comment": "Comfortable and responsive."
         }
       ]
-    },{
+    },
+    {
       "id": 17,
-      "name": "iPod",
-      "category": "smart home",
+      "name": "iPod Classic",
+      "category": "ipods",
       "price": 299.99,
-      "description": "Robot vacuum with smart mapping and scheduling.",
+      "description": "Classic music player with large storage capacity.",
       "specs": [
-        "Smart mapping",
-        "Scheduling",
-        "Voice control",
-        "Automatic dirt disposal",
-        "Compatible with Alexa, Google Assistant"
+        "160GB storage",
+        "2.5\" color display",
+        "Up to 36hr battery",
+        "Click wheel",
+        "Supports multiple formats"
       ],
       "image": "images/white-ipod.webp",
       "thumbnails": [
@@ -432,21 +438,22 @@
         {
           "author": "Kevin M.",
           "rating": 5,
-          "comment": "Cleans my house while I'm at work!"
+          "comment": "Perfect for my music collection!"
         }
       ]
-    },{
+    },
+    {
       "id": 18,
-      "name": "Headphones",
-      "category": "accessories",
+      "name": "Premium Headphones",
+      "category": "headphones",
       "price": 249.99,
-      "description": "Smart air purifier with HEPA filter and air quality monitoring.",
+      "description": "High-fidelity over-ear headphones with ANC.",
       "specs": [
-        "HEPA filter",
-        "Air quality monitoring",
-        "Remote control",
-        "Quiet operation",
-        "Compatible with Alexa, Google Assistant"
+        "Active Noise Cancellation",
+        "40mm drivers",
+        "30hr battery life",
+        "Foldable design",
+        "Bluetooth 5.0"
       ],
       "image": "images/red-headphones.webp",
       "thumbnails": [
@@ -457,21 +464,22 @@
         {
           "author": "Rachel N.",
           "rating": 5,
-          "comment": "Helps with my allergies!"
+          "comment": "Amazing sound quality!"
         }
       ]
-    },{
+    },
+    {
       "id": 19,
       "name": "Sony Tablet",
-      "category": "laptops",
+      "category": "tablets",
       "price": 699.99,
-      "description": "Smart coffee maker with scheduling and voice control.",
+      "description": "Premium Android tablet with OLED display.",
       "specs": [
-        "Voice control",
-        "Scheduling",
-        "Built-in grinder",
-        "Compatible with Alexa, Google Assistant",
-        "12-cup capacity"
+        "11\" 4K OLED",
+        "Snapdragon 8 Gen 2",
+        "8GB RAM",
+        "256GB storage",
+        "Android 13"
       ],
       "image": "images/sony-tablet-1.webp",
       "thumbnails": [
@@ -482,21 +490,22 @@
         {
           "author": "Mark T.",
           "rating": 5,
-          "comment": "Love waking up to fresh coffee!"
+          "comment": "Stunning display quality."
         }
       ]
-    },{
+    },
+    {
       "id": 20,
       "name": "Samsung Tablet",
-      "category": "laptops",
+      "category": "tablets",
       "price": 599.99,
-      "description": "Smart refrigerator with touch screen and inventory management.",
+      "description": "Powerful Android tablet with S Pen included.",
       "specs": [
-        "Touch screen display",
-        "Inventory management",
-        "Voice control",
-        "Energy efficient",
-        "Wi-Fi enabled"
+        "12.4\" Super AMOLED",
+        "Exynos 2200",
+        "8GB RAM",
+        "256GB storage",
+        "S Pen included"
       ],
       "image": "images/samsung-tablet-1.webp",
       "thumbnails": [
@@ -507,21 +516,22 @@
         {
           "author": "Laura G.",
           "rating": 5,
-          "comment": "Keeps track of my groceries!"
+          "comment": "Perfect for note-taking and drawing."
         }
       ]
-    },{
+    },
+    {
       "id": 21,
-      "name": "PS4 Controller",
+      "name": "PS5 Controller",
       "category": "accessories",
-      "price": 349.99,
-      "description": "Smart oven with remote control and recipe suggestions.",
+      "price": 69.99,
+      "description": "DualSense wireless controller for PS5.",
       "specs": [
-        "Remote control",
-        "Recipe suggestions",
-        "Self-cleaning",
-        "Energy efficient",
-        "Wi-Fi enabled"
+        "Haptic feedback",
+        "Adaptive triggers",
+        "Built-in microphone",
+        "Motion sensing",
+        "USB-C charging"
       ],
       "image": "images/ps4-controller.webp",
       "thumbnails": [
@@ -532,21 +542,22 @@
         {
           "author": "Steve H.",
           "rating": 5,
-          "comment": "Cooking has never been easier!"
+          "comment": "The haptic feedback is game-changing!"
         }
       ]
-    },{
+    },
+    {
       "id": 22,
-      "name": "Macbook 2018",
-      "category": "smart home",
-      "price": 899.99,
-      "description": "Smart dishwasher with energy-saving features.",
+      "name": "MacBook Pro 2018",
+      "category": "laptops",
+      "price": 1299.99,
+      "description": "Professional laptop with Retina display.",
       "specs": [
-        "Energy efficient",
-        "Remote control",
-        "Quiet operation",
-        "Multiple wash cycles",
-        "Wi-Fi enabled"
+        "15.4\" Retina display",
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Touch Bar"
       ],
       "image": "images/macbook-pro-3.webp",
       "thumbnails": [
@@ -557,71 +568,22 @@
         {
           "author": "Nancy P.",
           "rating": 5,
-          "comment": "Cleans dishes perfectly!"
+          "comment": "Still performs excellently."
         }
       ]
-    },{
+    },
+    {
       "id": 23,
-      "name": "Smart Washing Machine",
-      "category": "smart home",
-      "price": 799.99,
-      "description": "Smart washing machine with energy-saving features.",
+      "name": "Wireless Earbuds",
+      "category": "earbuds",
+      "price": 79.99,
+      "description": "Compact wireless earbuds with good sound quality.",
       "specs": [
-        "Energy efficient",
-        "Remote control",
-        "Multiple wash cycles",
-        "Wi-Fi enabled",
-        "Quiet operation"
-      ],
-      "image": "images/washing-machine-1.webp",
-      "thumbnails": [
-        "images/smart-home-thumb13.jpg"
-      ],
-      "featured": false,
-      "reviews": [
-        {
-          "author": "Karen W.",
-          "rating": 5,
-          "comment": "Washes clothes perfectly!"
-        }
-      ]
-    },{
-      "id": 24,
-      "name": "Headphones",
-      "category": "accessories",
-      "price": 99.99,
-      "description": "Smart dryer with energy-saving features.",
-      "specs": [
-        "Energy efficient",
-        "Remote control",
-        "Multiple drying cycles",
-        "Wi-Fi enabled",
-        "Quiet operation"
-      ],
-      "image": "images/red-black-headphones.webp",
-      "thumbnails": [
-        "images/smart-home-thumb14.jpg"
-      ],
-      "featured": false,
-      "reviews": [
-        {
-          "author": "Brian J.",
-          "rating": 5,
-          "comment": "Dries clothes quickly!"
-        }
-      ]
-    },{
-      "id": 25,
-      "name": "Earbuds",
-      "category": "accessories",
-      "price": 59.99,
-      "description": "Smart air conditioner with remote control and scheduling.",
-      "specs": [
-        "Remote control",
-        "Scheduling",
-        "Energy efficient",
-        "Wi-Fi enabled",
-        "Quiet operation"
+        "Bluetooth 5.0",
+        "IPX4 water resistant",
+        "20hr total battery",
+        "Touch controls",
+        "Built-in mic"
       ],
       "image": "images/black-earbuds.webp",
       "thumbnails": [
@@ -632,12 +594,12 @@
         {
           "author": "Jessica F.",
           "rating": 5,
-          "comment": "Keeps my home cool and comfortable!"
+          "comment": "Great sound for the price!"
         }
       ]
     },
     {
-      "id": 26,
+      "id": 24,
       "name": "iPhone 12",
       "category": "phones",
       "price": 559.00,
@@ -664,44 +626,17 @@
       ]
     },
     {
-      "id": 27,
-      "name": "Macbook 2016",
-      "category": "laptops",
-      "price": 999.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
-      "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
-      ],
-      "image": "images/macbook-pro-2.webp",
-      "thumbnails": [
-        "images/iphone-thumb1.jpg",
-        "images/iphone-thumb2.jpg"
-      ],
-      "featured": true,
-      "reviews": [
-        {
-          "author": "Emma W.",
-          "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "name": "Macbook Pro 2016",
+      "id": 25,
+      "name": "MacBook Pro 2016",
       "category": "laptops",
       "price": 699.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "13\" Retina Display",
+        "6th Gen Intel Core i5",
+        "8GB RAM",
+        "256GB SSD",
+        "Thunderbolt 3"
       ],
       "image": "images/macbook-pro-1.webp",
       "thumbnails": [
@@ -711,24 +646,24 @@
       "featured": true,
       "reviews": [
         {
-          "author": "Emma W.",
+          "author": "David K.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Still a great laptop for everyday use."
         }
       ]
     },
     {
-      "id": 28,
-      "name": "JBL wireless speaker",
+      "id": 26,
+      "name": "JBL Speaker",
       "category": "speakers",
-      "price": 569.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "price": 199.00,
+      "description": "Portable Bluetooth speaker with powerful sound.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "20W output",
+        "12hr battery life",
+        "IPX7 waterproof",
+        "PartyBoost for pairing",
+        "Bluetooth 5.1"
       ],
       "image": "images/wireless-sp-1.webp",
       "thumbnails": [
@@ -738,24 +673,24 @@
       "featured": true,
       "reviews": [
         {
-          "author": "Emma W.",
+          "author": "Alex M.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Loud and clear sound!"
         }
       ]
     },
     {
-      "id": 29,
-      "name": "Sonos wireless speaker",
+      "id": 27,
+      "name": "Sonos Speaker",
       "category": "speakers",
       "price": 199.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "description": "Smart speaker with voice control and WiFi.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "WiFi and Bluetooth",
+        "Voice control",
+        "Stereo pairing",
+        "Trueplay tuning",
+        "Apple AirPlay 2"
       ],
       "image": "images/wireless-sp-2.webp",
       "thumbnails": [
@@ -765,24 +700,24 @@
       "featured": true,
       "reviews": [
         {
-          "author": "Emma W.",
+          "author": "Sam R.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Perfect for multi-room audio."
         }
       ]
     },
     {
-      "id": 30,
-      "name": "Wave wireless speaker",
+      "id": 28,
+      "name": "Wave Speaker",
       "category": "speakers",
       "price": 249.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "description": "Premium wireless speaker with 360° sound.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "360° sound",
+        "24hr battery",
+        "IP67 waterproof",
+        "Party mode",
+        "Bluetooth 5.2"
       ],
       "image": "images/wireless-sp-3.webp",
       "thumbnails": [
@@ -794,22 +729,22 @@
         {
           "author": "Emma W.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Great sound for outdoor parties."
         }
       ]
     },
     {
-      "id": 31,
-      "name": "Sony wireless speaker",
+      "id": 29,
+      "name": "Sony Speaker",
       "category": "speakers",
-      "price": 469.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "price": 299.00,
+      "description": "Extra Bass portable Bluetooth speaker.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "Extra Bass sound",
+        "24hr battery",
+        "IP67 waterproof",
+        "Party chain",
+        "USB charging"
       ],
       "image": "images/wireless-sp-4.webp",
       "thumbnails": [
@@ -819,24 +754,24 @@
       "featured": true,
       "reviews": [
         {
-          "author": "Emma W.",
+          "author": "Mike T.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Amazing bass for its size."
         }
       ]
     },
     {
-      "id": 32,
-      "name": "Techno wireless speaker",
+      "id": 30,
+      "name": "Techno Speaker",
       "category": "speakers",
       "price": 199.00,
-      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "description": "Rugged portable speaker with LED lights.",
       "specs": [
-        "13\" or \"15\" Retina Display ",
-        "6th Gen Intel Core i5/i7",
-        "Thunderbolt 3 (USB-C) ",
-        "Up to 10hr battery",
-        "i2.7 lbs (13\")"
+        "RGB LED lights",
+        "20hr battery",
+        "IPX7 waterproof",
+        "TWS pairing",
+        "Karaoke mode"
       ],
       "image": "images/wireless-so-5.webp",
       "thumbnails": [
@@ -846,9 +781,9 @@
       "featured": true,
       "reviews": [
         {
-          "author": "Emma W.",
+          "author": "Lisa H.",
           "rating": 5,
-          "comment": "Best smartphone camera I've ever used."
+          "comment": "Fun lights and great sound!"
         }
       ]
     }
