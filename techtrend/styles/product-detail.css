@@ -53,7 +53,7 @@
   }
   
   .main-image img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
     max-height: 500px;
     object-fit: contain;
