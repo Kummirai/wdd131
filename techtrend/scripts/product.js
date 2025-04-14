@@ -97,7 +97,7 @@ async function displayFeaturedProducts() {
 
     featuredContainer.innerHTML = featuredProducts.map(product => `
       <div class="product-card" data-id="${product.id}">
-        <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+        <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
         <div class="product-info">
           <h3 class="product-title">${product.name}</h3>
           <p class="product-description">${product.description || 'No description available'}</p>
@@ -168,7 +168,7 @@ async function displayAllProducts() {
     productsContainer.innerHTML = filteredProducts.map(product => `
       <div class="product-card" data-id="${product.id}">
         <a href="product-detail.html?id=${product.id}">
-          <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+          <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
           <div class="product-info">
             <h3 class="product-title">${product.name}</h3>
             <p class="product-description">${product.description || ''}</p>
@@ -229,11 +229,11 @@ async function displayProductDetails() {
     detailContainer.innerHTML = `
       <div class="product-gallery">
         <div class="main-image">
-          <img id="mainProductImage" src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+          <img id="mainProductImage" src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
         </div>
         <div class="thumbnails" id="thumbnailImages">
           ${(product.thumbnails || []).map((thumb, index) => `
-            <img src="placeholder.jpg" data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
+            <img src=${product.image} data-src="${thumb}" alt="${product.name} thumbnail ${index + 1}" 
                  class="thumbnail ${index === 0 ? 'active' : ''}" 
                  onclick="changeMainImage('${thumb}', this)">
           `).join('')}
@@ -324,7 +324,7 @@ async function displayRelatedProducts(category, currentProductId) {
     relatedContainer.innerHTML = relatedProducts.map(product => `
       <div class="product-card" data-id="${product.id}">
         <a href="product-detail.html?id=${product.id}">
-          <img src="placeholder.jpg" data-src="${product.image}" alt="${product.name}" class="lazy">
+          <img src=${product.image} data-src="${product.image}" alt="${product.name}" class="lazy">
           <div class="product-info">
             <h3 class="product-title">${product.name}</h3>
             <div class="product-price">$${(product.price || 0).toFixed(2)}</div>

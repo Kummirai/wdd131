@@ -93,9 +93,19 @@ header {
 
 .main-nav ul li a {
   color: var(--accent-green);
-  font-weight: 200;
+  font-weight: 600;
   font-size: 0.85rem;
 }
+
+.main-nav ul li a:hover {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+.main-nav ul li a.active {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
 
 .main-nav ul li {
   margin-right: 2rem;

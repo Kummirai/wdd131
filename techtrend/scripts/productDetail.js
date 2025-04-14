@@ -76,7 +76,7 @@ function renderProductDetails(product) {
       <!-- Image Gallery -->
       <div class="product-gallery animate">
         <div class="main-image">
-          <img src="placeholder.jpg" data-src="${product.image}" 
+          <img src=${product.image} data-src="${product.image}" 
                alt="${product.name}" class="lazy">
         </div>
         ${renderThumbnails(product)}
@@ -109,7 +109,7 @@ function renderThumbnails(product) {
   return `
     <div class="thumbnail-container">
       ${product.images.map((img, i) => `
-        <img src="placeholder.jpg" data-src="${img}" 
+        <img src=${product.image} data-src="${img}" 
              alt="Thumbnail ${i+1}" class="thumbnail ${i === 0 ? 'active' : ''}"
              onclick="changeMainImage('${img}', this)">
       `).join('')}
@@ -170,7 +170,7 @@ function renderAdditionalSections(product) {
       <div class="features-grid">
         ${product.features.map(feature => `
           <div class="feature-card">
-            <img src="placeholder.jpg" data-src="${feature.icon}" 
+            <img src=${product.image} data-src="${feature.icon}" 
                  alt="" class="lazy">
             <h4>${feature.title}</h4>
             <p>${feature.description}</p>
