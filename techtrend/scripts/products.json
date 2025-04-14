@@ -272,7 +272,7 @@
         "Smart routines",
         "Remote access"
       ],
-      "image": "images/smart-home-hub.jpg",
+      "image": "images/mac-1.webp",
       "thumbnails": [
         "images/smart-home-thumb1.jpg"
       ],
@@ -287,8 +287,8 @@
     },
     {
       "id": 12,
-      "name": "Smart Light Bulb",
-      "category": "smart home",
+      "name": "iMac",
+      "category": "laptops",
       "price": 19.99,
       "description": "Smart LED bulb with color changing and scheduling.",
       "specs": [
@@ -298,7 +298,7 @@
         "Energy efficient",
         "Compatible with Alexa, Google Assistant"
       ],
-      "image": "images/smart-light-bulb.jpg",
+      "image": "images/imac-2.webp",
       "thumbnails": [
         "images/smart-home-thumb2.jpg"
       ],
@@ -312,9 +312,9 @@
       ]
     },{
       "id": 13,
-      "name": "Smart Security Camera",
-      "category": "smart home",
-      "price": 129.99,
+      "name": "iPhone 14",
+      "category": "phones",
+      "price": 729.99,
       "description": "1080p HD security camera with night vision.",
       "specs": [
         "1080p HD video",
@@ -323,7 +323,7 @@
         "Motion detection",
         "Cloud storage"
       ],
-      "image": "images/smart-security-camera.jpg",
+      "image": "images/iphone-14.webp",
       "thumbnails": [
         "images/smart-home-thumb3.jpg"
       ],
@@ -337,9 +337,9 @@
       ]
     },{
       "id": 14,
-      "name": "Smart Thermostat",
-      "category": "smart home",
-      "price": 129.99,
+      "name": "Monitor",
+      "category": "laptops",
+      "price": 429.99,
       "description": "Smart thermostat with energy-saving features.",
       "specs": [
         "Wi-Fi enabled",
@@ -348,7 +348,7 @@
         "Learning capabilities",
         "Compatible with most HVAC systems"
       ],
-      "image": "images/smart-thermostat.jpg",
+      "image": "images/monitor-1.webp",
       "thumbnails": [
         "images/smart-home-thumb4.jpg"
       ],
@@ -362,9 +362,9 @@
       ]
     },{
       "id": 15,
-      "name": "Smart Door Lock",
-      "category": "smart home",
-      "price": 199.99,
+      "name": "Parkard Bell",
+      "category": "laptops",
+      "price": 499.99,
       "description": "Keyless entry smart lock with remote access.",
       "specs": [
         "Keyless entry",
@@ -373,7 +373,7 @@
         "Voice control",
         "Compatible with Alexa, Google Assistant"
       ],
-      "image": "images/smart-door-lock.jpg",
+      "image": "images/parkard-bell.webp",
       "thumbnails": [
         "images/smart-home-thumb5.jpg"
       ],
@@ -387,8 +387,8 @@
       ]
     },{
       "id": 16,
-      "name": "Smart Plug",
-      "category": "smart home",
+      "name": "Xbox controller",
+      "category": "accessories",
       "price": 29.99,
       "description": "Smart plug for controlling devices remotely.",
       "specs": [
@@ -398,7 +398,7 @@
         "Compact design",
         "Compatible with Alexa, Google Assistant"
       ],
-      "image": "images/smart-plug.jpg",
+      "image": "images/xbox-controller.webp",
       "thumbnails": [
         "images/smart-home-thumb6.jpg"
       ],
@@ -412,7 +412,7 @@
       ]
     },{
       "id": 17,
-      "name": "Smart Vacuum Cleaner",
+      "name": "iPod",
       "category": "smart home",
       "price": 299.99,
       "description": "Robot vacuum with smart mapping and scheduling.",
@@ -423,7 +423,7 @@
         "Automatic dirt disposal",
         "Compatible with Alexa, Google Assistant"
       ],
-      "image": "images/smart-vacuum.jpg",
+      "image": "images/white-ipod.webp",
       "thumbnails": [
         "images/smart-home-thumb7.jpg"
       ],
@@ -437,8 +437,8 @@
       ]
     },{
       "id": 18,
-      "name": "Smart Air Purifier",
-      "category": "smart home",
+      "name": "Headphones",
+      "category": "accessories",
       "price": 249.99,
       "description": "Smart air purifier with HEPA filter and air quality monitoring.",
       "specs": [
@@ -448,7 +448,7 @@
         "Quiet operation",
         "Compatible with Alexa, Google Assistant"
       ],
-      "image": "images/smart-air-purifier.jpg",
+      "image": "images/red-headphones.webp",
       "thumbnails": [
         "images/smart-home-thumb8.jpg"
       ],
@@ -462,9 +462,9 @@
       ]
     },{
       "id": 19,
-      "name": "Smart Coffee Maker",
-      "category": "smart home",
-      "price": 99.99,
+      "name": "Sony Tablet",
+      "category": "laptops",
+      "price": 699.99,
       "description": "Smart coffee maker with scheduling and voice control.",
       "specs": [
         "Voice control",
@@ -473,7 +473,7 @@
         "Compatible with Alexa, Google Assistant",
         "12-cup capacity"
       ],
-      "image": "images/smart-coffee-maker.jpg",
+      "image": "images/sony-tablet-1.webp",
       "thumbnails": [
         "images/smart-home-thumb9.jpg"
       ],
@@ -487,9 +487,9 @@
       ]
     },{
       "id": 20,
-      "name": "Smart Refrigerator",
-      "category": "smart home",
-      "price": 1999.99,
+      "name": "Samsung Tablet",
+      "category": "laptops",
+      "price": 599.99,
       "description": "Smart refrigerator with touch screen and inventory management.",
       "specs": [
         "Touch screen display",
@@ -498,7 +498,7 @@
         "Energy efficient",
         "Wi-Fi enabled"
       ],
-      "image": "images/smart-refrigerator.jpg",
+      "image": "images/samsung-tablet-1.webp",
       "thumbnails": [
         "images/smart-home-thumb10.jpg"
       ],
@@ -512,9 +512,9 @@
       ]
     },{
       "id": 21,
-      "name": "Smart Oven",
-      "category": "smart home",
-      "price": 1499.99,
+      "name": "PS4 Controller",
+      "category": "accessories",
+      "price": 349.99,
       "description": "Smart oven with remote control and recipe suggestions.",
       "specs": [
         "Remote control",
@@ -523,7 +523,7 @@
         "Energy efficient",
         "Wi-Fi enabled"
       ],
-      "image": "images/smart-oven.jpg",
+      "image": "images/ps4-controller.webp",
       "thumbnails": [
         "images/smart-home-thumb11.jpg"
       ],
@@ -537,7 +537,7 @@
       ]
     },{
       "id": 22,
-      "name": "Smart Dishwasher",
+      "name": "Macbook 2018",
       "category": "smart home",
       "price": 899.99,
       "description": "Smart dishwasher with energy-saving features.",
@@ -548,7 +548,7 @@
         "Multiple wash cycles",
         "Wi-Fi enabled"
       ],
-      "image": "images/smart-dishwasher.jpg",
+      "image": "images/macbook-pro-3.webp",
       "thumbnails": [
         "images/smart-home-thumb12.jpg"
       ],
@@ -587,9 +587,9 @@
       ]
     },{
       "id": 24,
-      "name": "Smart Dryer",
-      "category": "smart home",
-      "price": 799.99,
+      "name": "Headphones",
+      "category": "accessories",
+      "price": 99.99,
       "description": "Smart dryer with energy-saving features.",
       "specs": [
         "Energy efficient",
@@ -598,7 +598,7 @@
         "Wi-Fi enabled",
         "Quiet operation"
       ],
-      "image": "images/smart-dryer.jpg",
+      "image": "images/red-black-headphones.webp",
       "thumbnails": [
         "images/smart-home-thumb14.jpg"
       ],
@@ -612,9 +612,9 @@
       ]
     },{
       "id": 25,
-      "name": "Smart Air Conditioner",
-      "category": "smart home",
-      "price": 499.99,
+      "name": "Earbuds",
+      "category": "accessories",
+      "price": 59.99,
       "description": "Smart air conditioner with remote control and scheduling.",
       "specs": [
         "Remote control",
@@ -623,7 +623,7 @@
         "Wi-Fi enabled",
         "Quiet operation"
       ],
-      "image": "images/air-conditioner.webp",
+      "image": "images/black-earbuds.webp",
       "thumbnails": [
         "images/smart-home-thumb15.jpg"
       ],
@@ -640,7 +640,7 @@
       "id": 26,
       "name": "iPhone 12",
       "category": "phones",
-      "price": 999.00,
+      "price": 559.00,
       "description": "Apple iPhone 12 – Sleek. Powerful. 5G Ready",
       "specs": [
         "6.1\" Super Retina XDR",
@@ -694,7 +694,7 @@
       "id": 27,
       "name": "Macbook Pro 2016",
       "category": "laptops",
-      "price": 999.00,
+      "price": 699.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
@@ -721,7 +721,7 @@
       "id": 28,
       "name": "JBL wireless speaker",
       "category": "speakers",
-      "price": 999.00,
+      "price": 569.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
@@ -748,7 +748,7 @@
       "id": 29,
       "name": "Sonos wireless speaker",
       "category": "speakers",
-      "price": 999.00,
+      "price": 199.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
@@ -775,7 +775,7 @@
       "id": 30,
       "name": "Wave wireless speaker",
       "category": "speakers",
-      "price": 999.00,
+      "price": 249.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
@@ -802,7 +802,7 @@
       "id": 31,
       "name": "Sony wireless speaker",
       "category": "speakers",
-      "price": 999.00,
+      "price": 469.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
@@ -829,7 +829,7 @@
       "id": 32,
       "name": "Techno wireless speaker",
       "category": "speakers",
-      "price": 999.00,
+      "price": 199.00,
       "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
       "specs": [
         "13\" or \"15\" Retina Display ",
