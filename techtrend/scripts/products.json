@@ -77,7 +77,7 @@
     {
       "id": 4,
       "name": "iPhone 16 Pro",
-      "category": "Smartphones",
+      "category": "smartphones",
       "price": 999.00,
       "description": "The ultimate iPhone with pro camera system.",
       "specs": [
@@ -635,6 +635,88 @@
           "comment": "Keeps my home cool and comfortable!"
         }
       ]
+    },
+    {
+      "id": 26,
+      "name": "iPhone 12",
+      "category": "smartphones",
+      "price": 999.00,
+      "description": "Apple iPhone 12 – Sleek. Powerful. 5G Ready",
+      "specs": [
+        "6.1\" Super Retina XDR",
+        "A14 Bionic chip",
+        "128GB Storage",
+        "Pro camera system",
+        "iOS 17"
+      ],
+      "image": "images/iphone-12.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Macbook 2016",
+      "category": "laptops",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/macbook-pro-2.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Macbook Pro 2016",
+      "category": "laptops",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/macbook-pro-1.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
     }
+    
   ]
 }
