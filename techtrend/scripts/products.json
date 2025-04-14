@@ -77,7 +77,7 @@
     {
       "id": 4,
       "name": "iPhone 16 Pro",
-      "category": "smartphones",
+      "category": "phones",
       "price": 999.00,
       "description": "The ultimate iPhone with pro camera system.",
       "specs": [
@@ -623,7 +623,7 @@
         "Wi-Fi enabled",
         "Quiet operation"
       ],
-      "image": "images/smart-air-conditioner.jpg",
+      "image": "images/air-conditioner.webp",
       "thumbnails": [
         "images/smart-home-thumb15.jpg"
       ],
@@ -639,7 +639,7 @@
     {
       "id": 26,
       "name": "iPhone 12",
-      "category": "smartphones",
+      "category": "phones",
       "price": 999.00,
       "description": "Apple iPhone 12 – Sleek. Powerful. 5G Ready",
       "specs": [
@@ -716,7 +716,141 @@
           "comment": "Best smartphone camera I've ever used."
         }
       ]
+    },
+    {
+      "id": 28,
+      "name": "JBL wireless speaker",
+      "category": "speakers",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/wireless-sp-1.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Sonos wireless speaker",
+      "category": "speakers",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/wireless-sp-2.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Wave wireless speaker",
+      "category": "speakers",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/wireless-sp-3.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Sony wireless speaker",
+      "category": "speakers",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/wireless-sp-4.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Techno wireless speaker",
+      "category": "speakers",
+      "price": 999.00,
+      "description": "Apple MacBook Pro 2016 – Slim. Powerful. Professional.",
+      "specs": [
+        "13\" or \"15\" Retina Display ",
+        "6th Gen Intel Core i5/i7",
+        "Thunderbolt 3 (USB-C) ",
+        "Up to 10hr battery",
+        "i2.7 lbs (13\")"
+      ],
+      "image": "images/wireless-so-5.webp",
+      "thumbnails": [
+        "images/iphone-thumb1.jpg",
+        "images/iphone-thumb2.jpg"
+      ],
+      "featured": true,
+      "reviews": [
+        {
+          "author": "Emma W.",
+          "rating": 5,
+          "comment": "Best smartphone camera I've ever used."
+        }
+      ]
     }
-    
   ]
 }
