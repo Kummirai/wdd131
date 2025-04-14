@@ -538,7 +538,7 @@ footer {
 }
 
 .item-image {
-  width: 250px;
+  width: 100%;
   height: 250px;
   flex-shrink: 0;
 }
