@@ -609,6 +609,7 @@ footer {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
